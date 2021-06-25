@@ -7,3 +7,6 @@
 
 ~$ ./run_webots_ros.bash
 ```
+
+* ```--net```, ```--ipc``` 붙이니까 rviz가 안되네 
+* 이부분 해

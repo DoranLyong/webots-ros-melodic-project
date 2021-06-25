@@ -24,3 +24,4 @@
 * [universal_robots](http://wiki.ros.org/universal_robots) 설치 
 * [WEBOTS_HOME](https://cyberbotics.com/doc/guide/tutorial-8-using-ros) 환경변수 설정 
 * [UR 로봇 프로젝트 파일을 catkin_ws로 옮기고](https://cyberbotics.com/doc/guide/ure) rviz에 띄우기 
+* webots 모델을 ROS로 보내기 위해서는 → webots 에서 물체 모델에 ```extern```

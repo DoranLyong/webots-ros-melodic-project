@@ -19,7 +19,12 @@
 
 ~$ ./run_webots_ros.bash
 ```
-* 위의 명령어가 실행되면 
+* 위의 명령어가 실행되면 ```webots_melodic``` 이란 이름으로 도커 컨테이너가 생성된다 
+* 해당 컨테이너를 다시 실행하고 싶다면 
+  ``` bash
+  ~$ docker start webots_melodic 
+  ~$ docker exec -it webots_melodic /bin/bash
+  ```
 
 
 - [ ] ```--net```, ```--ipc``` 붙이니까 rviz가 안되네... 이부분 해결해필요 

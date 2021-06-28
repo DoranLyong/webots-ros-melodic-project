@@ -1,5 +1,10 @@
 # webots-ros-melodic-project (미완성)
 
+[실행환경]
+* Ubuntu OS
+* Nvidia GPU driver 
+
+
 #### Install Docker and Nvidia-docker 
 * [docker.com](https://docs.docker.com/engine/install/ubuntu/)으로 가서 자신의 컴퓨터 환경에 맞는 Docker Engine을 설치한다 
 * 루트(root) 권한 설정; ```sudo``` 없이 도커 사용하기 

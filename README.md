@@ -1,4 +1,4 @@
-# webots-ros-melodic-project
+# webots-ros-melodic-project (미완성)
 
 #### Install Docker and Nvidia-docker 
 * [docker.com](https://docs.docker.com/engine/install/ubuntu/)으로 가서 자신의 컴퓨터 환경에 맞는 Docker Engine을 설치한다 
@@ -48,7 +48,12 @@
   ~$ roslaunch ur10_e_moveit_config moveit_rviz.launch config:=true   
   ```
 * 여기까지 실행이 끝났다면 webots의 가상환경이 ROS rviz에 연동된 것을 확인할 수 있다 
-* 간단한 인터페이스 튜토리얼을 보고 싶다면 다시 새로운 터미널을 켜고 
+* 간단한 인터페이스 튜토리얼을 보고 싶다면 다시 새로운 터미널을 켜고 해당 도커 컨테이너를 실행한 뒤 다음 ROS 패키지를 실행한다: 
+  ```bash
+  ~$ rosrun moveit_tutorials move_webots_ur_e_python_interface.py  
+  ```
+  *
+  
 
 
 

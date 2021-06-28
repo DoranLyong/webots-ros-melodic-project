@@ -37,7 +37,7 @@
 
 * ```~$ webots``` 명령어를 기입하면 webots 가상환경이 실행된다. 
 * 새로운 터미널에서 ```webots_melodic``` 컨테이너를 각각 실행해서 다음과 같이 명령어를 각각 기입한다: 
-  * 컨테이너 실행은 맨 위의 ```Pull and Install the docker image``` 
+  * 컨테이너 실행은 맨 위의 [Pull and Install the docker image](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/README.md#pull-and-install-the-docker-image) 부분 참고 
   ```bash 
   ~$ roscore
   

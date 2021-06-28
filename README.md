@@ -15,6 +15,8 @@
 #### Pull and Install the docker image 
 도커 설치가 완료됐다면 다음과 같이 명령어를 실행한다: 
 ```bash 
+~$ 
+
 ~$ sudo chmod a+x run_webots_ros.bash
 
 ~$ ./run_webots_ros.bash

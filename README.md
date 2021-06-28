@@ -53,7 +53,7 @@
 
 
 - [ ] 추후 ```roslaunch```로 명령어를 간소화 시키자 
-- [ ] 로컬 PC의 ROS와 도커 컨테이너 상의 ROS가 서로 같은 roscore
+- [ ] 로컬 PC의 ROS와 도커 컨테이너 상의 ROS가 서로 같은 roscore에 연결되도록 수정 
 
 
 

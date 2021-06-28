@@ -47,11 +47,13 @@
   
   ~$ roslaunch ur10_e_moveit_config moveit_rviz.launch config:=true   
   ```
-
+* 여기까지 실행이 끝났다면 webots의 가상환경이 ROS rviz에 연동된 것을 확인할 수 있다 
+* 간단한 인터페이스 튜토리얼을 보고 싶다면 다시 새로운 터미널을 켜고 
 
 
 
 - [ ] 추후 ```roslaunch```로 명령어를 간소화 시키자 
+- [ ] 로컬 PC의 ROS와 도커 컨테이너 상의 ROS가 서로 같은 roscore
 
 
 

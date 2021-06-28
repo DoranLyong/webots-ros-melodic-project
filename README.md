@@ -20,7 +20,7 @@
 ~$ ./run_webots_ros.bash
 ```
 * 위의 명령어가 실행되면 ```webots_melodic``` 이란 이름으로 도커 컨테이너가 생성된다 
-* 해당 컨테이너를 다시 실행하고 싶다면 
+* 해당 컨테이너를 다시 실행하고 싶다면 로컬 PC의 터미널에서 다음
   ``` bash
   ~$ docker start webots_melodic 
   ~$ docker exec -it webots_melodic /bin/bash

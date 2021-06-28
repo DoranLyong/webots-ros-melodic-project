@@ -52,13 +52,15 @@
   ```bash
   ~$ rosrun moveit_tutorials move_webots_ur_e_python_interface.py  
   ```
-  *
+  * ```x, y, z``` 좌표를 입력하면 moveit 상의 머니퓰레이터가 움직이면서 webots 가상환경과 연동된 것을 확인할 수 있다 
+  * (ex) ```0.8, -0.3, 0.8``` 
   
 
 
 
 - [ ] 추후 ```roslaunch```로 명령어를 간소화 시키자 
 - [ ] 로컬 PC의 ROS와 도커 컨테이너 상의 ROS가 서로 같은 roscore에 연결되도록 수정 
+- [ ] 로봇 핸드의 pick-up 기능 코드 추가 
 
 
 

@@ -6,6 +6,10 @@
   ``` bash
   ~$ sudo usermod -aG docker $USER #현재 접속중인 사용자에게 권한주기 
   ```
+* [docker.com/compose](https://docs.docker.com/compose/install/)에서 Docker Compose를 설치한다 
+* [nvidia.com](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker)를 참고해서 Nvidia-docker를 설치한다 
+  * 단, 사전에 로컬 PC에서 ```watch nvidia-smi``` 명령어가 가능해야한다. 
+  * 위의 명령어가 안 된다면 본인의 환경에 맞게 GPU 드라이버를 
 
 
 #### Pull and Install the docker image 

@@ -1,5 +1,12 @@
 # webots-ros-melodic-project
 
+#### Install Docker and Nvidia-docker 
+* [docker.com](https://docs.docker.com/engine/install/ubuntu/)으로 가서 자신의 컴퓨터 환경에 맞는 Docker Engine을 설치한다 
+* 루트(root) 권한 설정; ```sudo``` 없이 도커 사용하기 
+  ``` bash
+  ~$ sudo usermod -aG docker $USER #현재 접속중인 사용자에게 권한주기 
+  ```
+
 
 #### Pull and Install the docker image 
 ```bash 
@@ -7,9 +14,10 @@
 
 ~$ ./run_webots_ros.bash
 ```
+* 위의 명령어가 실행되면 
 
-- [ ] ```--net```, ```--ipc``` 붙이니까 rviz가 안되네 
-- [ ] 이부분 해결해야함 
+
+- [ ] ```--net```, ```--ipc``` 붙이니까 rviz가 안되네... 이부분 해결해필요 
 
 
 

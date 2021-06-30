@@ -5,7 +5,7 @@
 * Nvidia GPU driver 
 
 
-### Install Docker and Nvidia-docker 
+### 1. Install Docker and Nvidia-docker 
 * [docker.com](https://docs.docker.com/engine/install/ubuntu/)으로 가서 자신의 컴퓨터 환경에 맞는 Docker Engine을 설치한다 
 * 루트(root) 권한 설정; ```sudo``` 없이 도커 사용하기 
   ``` bash
@@ -17,7 +17,7 @@
   * 위의 명령어가 안 된다면 본인의 환경에 맞게 GPU 드라이버를 설치해야 한다 
 
 
-### Pull and Install the docker image 
+### 2. Pull and Install the docker image 
 
 #### 손쉬운 실행 (recommended)
 ```bash
@@ -35,7 +35,7 @@
 
 #### 밑바닥 부터 실행하기 ( you don't need to follow )
 * 위의 ```.bash``` 파일에 포함된 내용들
-* 따라서, 여기 부분은 따라할 필요 없다 (위의 실행 파일이 어떤 내용을 담고 있는지 이해하고 싶다면 참고)
+* 따라서, 여기 부분은 따라 할 필요가 없다 (위의 실행 파일이 어떤 내용을 담고 있는지 이해하고 싶다면 참고)
 
 도커 설치가 완료됐다면 다음과 같이 명령어를 실행한다: 
 ```bash 
@@ -59,7 +59,7 @@
 
 
 
-### Run webots and Connect with ROS 
+### 3. Run webots and Connect with ROS (여기서 부터는 도커 환경에서...)
 
 * 실행된 도커 컨테이너에서 ```~$ webots``` 명령어를 기입하면 webots 가상환경이 실행된다. 
 * 새로운 터미널에서 ```webots_melodic``` 컨테이너를 각각 실행해서 다음과 같이 명령어를 각각 기입한다: 

@@ -11,7 +11,8 @@ then
     chmod a+r $XAUTH
 fi
 
-docker run -it \
+
+docker run -t -d \
     --name webots_melodic \
     --env="DISPLAY=$DISPLAY" \
     --env="QT_X11_NO_MITSHM=1" \

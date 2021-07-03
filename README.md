@@ -88,11 +88,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
 #### 5. UR10 로봇 제어
 
 
-  ```bash 
-  ~$ roscore
-  
-  ~$ roslaunch ur_e_webots ur10e.launch
-  
+  ```bash   
   ~$ roslaunch ur10_e_moveit_config ur10_e_moveit_planning_execution.launch
   
   ~$ roslaunch ur10_e_moveit_config moveit_rviz.launch config:=true   

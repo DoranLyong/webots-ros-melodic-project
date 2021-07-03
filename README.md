@@ -48,7 +48,7 @@ export ROS_IP=172.17.0.2  # in the docker container for webots world
 export ROS_HOSTNAME=$ROS_IP
 export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for ROS Master 
 ```
- 
+- [x] 로컬 PC의 ROS와 도커 컨테이너 상의 ROS가 서로 같은 roscore에 연결되도록 수정  
   
 
 ### 3. Run the webots world and Connect with ROS (여기서 부터는 도커 환경에서...)
@@ -60,7 +60,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
 
 - [x] webots world 에서 센서 데이터(RGB, depth_map)를 ros topic/service 정보 받기 
 - [x] 추후 ```roslaunch```로 명령어를 간소화 시키자 
-- [x] 로컬 PC의 ROS와 도커 컨테이너 상의 ROS가 서로 같은 roscore에 연결되도록 수정 
+
 
 ***
 

@@ -8,7 +8,9 @@
 
 ### 로컬 PC에 Webots 설치하기 
 * 로컬 PC에 [ROS Melodic](http://wiki.ros.org/melodic)이 설치 된 것으로 간주한다 
+* [Installation Procedure](https://cyberbotics.com/doc/guide/installation-procedure#installation-procedure)을 참고해서 webots을 설치한다 
 * 
+* Webots [Environment Variables](https://www.cyberbotics.com/doc/guide/running-extern-robot-controllers?tab-os=linux&tab-language=python#environment-variables) 설정
 
 
 ### Webots World 설치하기 

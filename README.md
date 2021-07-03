@@ -88,7 +88,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
 # RGB image topic 
 /CAM/camera/image
 
-# Depth_map topic 
+# Depth image topic 
 /CAM/range_finder/range_image
 ```
 

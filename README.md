@@ -60,11 +60,13 @@
 
 
 
-### 3. Run webots and Connect with ROS (여기서 부터는 도커 환경에서...)
+### 3. Run the webots world and Connect with ROS (여기서 부터는 도커 환경에서...)
+```bash
+~$ ./run
 
-* 실행된 도커 컨테이너에서 ```~$ webots``` 명령어를 기입하면 webots 가상환경이 실행된다. 
-* 새로운 터미널에서 ```webots_melodic``` 컨테이너를 각각 실행해서 다음과 같이 명령어를 각각 기입한다: 
-  * 컨테이너 실행은 맨 위의 [Pull and Install the docker image](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/README.md#pull-and-install-the-docker-image) 부분 참고 
+```
+
+
   ```bash 
   ~$ roscore
   
@@ -84,9 +86,9 @@
   
 
 
-- [ ] webots world 에서 오브젝트의 데이터를 ros topic/service 정보 받기 
-- [ ] 추후 ```roslaunch```로 명령어를 간소화 시키자 
-- [ ] 로컬 PC의 ROS와 도커 컨테이너 상의 ROS가 서로 같은 roscore에 연결되도록 수정 
+- [x] webots world 에서 센서 데이터(RGB, depth_map)를 ros topic/service 정보 받기 
+- [x] 추후 ```roslaunch```로 명령어를 간소화 시키자 
+- [x] 로컬 PC의 ROS와 도커 컨테이너 상의 ROS가 서로 같은 roscore에 연결되도록 수정 
 - [ ] 로봇 핸드의 pick-up 기능 코드 추가 
 
 

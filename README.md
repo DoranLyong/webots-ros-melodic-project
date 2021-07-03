@@ -63,10 +63,23 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
 
 
 ***
+### 4. 영상 데이터 Subscribe 테스트 
+* 여기까지 수행했다면 webots world 에서 ROS Master로 RGB 카메라 및 Range Finder 데이터 토픽(topic)을 발행한다 
+* 아래 토픽 버스 이름을 통해 영상 정보를 확인할 수 있다 
+```bash 
+# RGB image topic 
+/CAM/camera/image
+
+# Depth_map topic 
+/CAM/range_finder/range_image
+```
 
 
 
-### 4. UR10 로봇 제어
+
+
+
+### 5. UR10 로봇 제어
 
 
   ```bash 

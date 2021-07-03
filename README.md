@@ -33,25 +33,8 @@
 
 <br/>
 
-
-#### 밑바닥 부터 실행하기 ( you don't need to follow )
-* 위의 ```.bash``` 파일에 포함된 내용들
-* 따라서, 여기 부분은 따라 할 필요가 없다 (위의 실행 파일이 어떤 내용을 담고 있는지 이해하고 싶다면 참고)
-
-도커 설치가 완료됐다면 다음과 같이 명령어를 실행한다: 
-```bash 
-~$ xhost + 
-
-~$ sudo chmod a+x run_webots_ros.bash
-
-~$ ./run_webots_ros.bash
-```
 * 위의 명령어가 실행되면 ```webots_melodic``` 이란 이름으로 도커 컨테이너가 생성된다 
-* 해당 컨테이너를 다시 실행하고 싶다면 로컬 PC의 터미널에서 다음 명령어를 실행한다 
-  ``` bash
-  ~$ docker start webots_melodic 
-  ~$ docker exec -it webots_melodic /bin/bash
-  ```
+* 해당 컨테이너를 다시 실행하고 싶다면 로컬 PC의 터미널에서 ```~$ ./run_webots-ros_container.bash``` 명령을 다시 실행한다 
 
 
 - [x] ```--net```, ```--ipc``` 붙이니까 rviz가 안되네... 이부분 해결 필요 

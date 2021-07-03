@@ -1,8 +1,9 @@
 # webots-ros-melodic-project (미완성)
 
 [실행환경]
-* Ubuntu OS
-* Nvidia GPU driver 
+* Ubuntu 18.04 
+* Nvidia GPU driver
+* ROS Melodic  
 
 
 ### 1. Install Docker and Nvidia-docker 

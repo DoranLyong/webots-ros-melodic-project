@@ -18,6 +18,7 @@
   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$WEBOTS_HOME/lib/controller
   export PYTHONPATH=$PYTHONPATH:$WEBOTS_HOME/lib/controller/python27
   ```
+(6) 테스트: [UR 로봇 프로젝트 파일을 catkin_ws로 옮기고 rviz에 띄우기](https://cyberbotics.com/doc/guide/ure)
 
 ***
 

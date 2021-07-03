@@ -11,6 +11,12 @@
 * [Installation Procedure](https://cyberbotics.com/doc/guide/installation-procedure#installation-procedure)을 참고해서 webots을 설치한다 
 * 
 * Webots [Environment Variables](https://www.cyberbotics.com/doc/guide/running-extern-robot-controllers?tab-os=linux&tab-language=python#environment-variables) 설정
+  ```bash
+  # 로컬 PC의 ~/.bashrc 에서 
+  export WEBOTS_HOME=/usr/local/webots
+  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$WEBOTS_HOME/lib/controller
+  export PYTHONPATH=$PYTHONPATH:$WEBOTS_HOME/lib/controller/python27
+  ```
 
 
 ### Webots World 설치하기 

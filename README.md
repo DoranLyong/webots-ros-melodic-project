@@ -75,7 +75,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
 
 
 ***
-### 로컬 PC에Webots World 제어하기 
+### 로컬 PC에서 Webots World 제어하기 
 
 
 #### 4. 영상 데이터 Subscribe 테스트 

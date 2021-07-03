@@ -10,7 +10,8 @@
 (1) 로컬 PC에 [ROS Melodic](http://wiki.ros.org/melodic)이 설치 된 것으로 간주한다 <br/>
 (2) [Installation Procedure](https://cyberbotics.com/doc/guide/installation-procedure#installation-procedure)을 참고해서 [webots을 설치](https://cyberbotics.com/)한다 <br/>
 (3) [universal_robots](http://wiki.ros.org/universal_robots) 패키지를 ROS 버전에 맞게 설치한다 <br/>
-(4) Webots [Environment Variables](https://www.cyberbotics.com/doc/guide/running-extern-robot-controllers?tab-os=linux&tab-language=python#environment-variables) 할당 (webots 함수 패키지 추가하기) ; [(참고)](https://cyberbotics.com/doc/guide/tutorial-8-using-ros)
+(4) [WEBOTS_HOME](https://cyberbotics.com/doc/guide/tutorial-8-using-ros) 환경변수 할당<br/>
+(5) Webots [Environment Variables](https://www.cyberbotics.com/doc/guide/running-extern-robot-controllers?tab-os=linux&tab-language=python#environment-variables) 할당 (webots 함수 패키지 추가하기)
   ```bash
   # 로컬 PC의 ~/.bashrc 에서 
   export WEBOTS_HOME=/usr/local/webots

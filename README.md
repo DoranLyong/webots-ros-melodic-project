@@ -46,7 +46,7 @@
 
 export ROS_IP=172.17.0.2
 export ROS_HOSTNAME=$ROS_IP
-export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of local PC for ROS Master 
+export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for ROS Master 
 ```
  
   

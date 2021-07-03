@@ -6,7 +6,12 @@
 * ROS Melodic  
 
 
-### 1. Install Docker and Nvidia-docker 
+### 로컬 PC에 Webots 설치하기 
+
+
+
+### Webots World 설치하기 
+#### 1. Install Docker and Nvidia-docker 
 * [docker.com](https://docs.docker.com/engine/install/ubuntu/)으로 가서 자신의 컴퓨터 환경에 맞는 Docker Engine을 설치한다 
 * 루트(root) 권한 설정; ```sudo``` 없이 도커 사용하기 
   ``` bash
@@ -18,9 +23,7 @@
   * 위의 명령어가 안 된다면 본인의 환경에 맞게 GPU 드라이버를 설치해야 한다 
 
 
-### 2. Pull and Install the docker image 
-
-#### 손쉬운 실행 (recommended)
+#### 2. Pull and Install the docker image 
 ```bash
 ~$ sudo chmod a+x make_webots-ros_container.bash run_webots-ros_container.bash  # 실행 권한 부여 
 
@@ -51,7 +54,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
 - [x] 로컬 PC의 ROS와 도커 컨테이너 상의 ROS가 서로 같은 roscore에 연결되도록 수정  
   
 
-### 3. Run the webots world and Connect with ROS (여기서 부터는 도커 환경에서...)
+#### 3. Run the webots world and Connect with ROS (여기서 부터는 도커 환경에서...)
 * 도커 환경에서 아래 명령어를 실행한다
 * 그러면 대회에 쓰일 webots world가 열린다 
 ```bash
@@ -63,7 +66,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
 
 
 ***
-### 4. 영상 데이터 Subscribe 테스트 
+#### 4. 영상 데이터 Subscribe 테스트 
 * 여기까지 수행했다면 webots world 에서 ROS Master로 RGB 카메라 및 Range Finder 데이터 토픽(topic)을 발행한다 
 * 아래 토픽 버스 이름을 통해 영상 정보를 확인할 수 있다 
 ```bash 
@@ -79,7 +82,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
 
 
 
-### 5. UR10 로봇 제어
+#### 5. UR10 로봇 제어
 
 
   ```bash 

@@ -57,7 +57,7 @@
 
 - 도커 환경에서 ROS network를 다음과 같이 설정한다: 
 ```bash 
-# ~/.bashrc 에서 
+# 도커의 ~/.bashrc 에서 
 
 export ROS_IP=172.17.0.2  # in the docker container for webots world
 export ROS_HOSTNAME=$ROS_IP

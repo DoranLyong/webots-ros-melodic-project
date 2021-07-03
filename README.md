@@ -39,7 +39,15 @@
 
 - [x] ```--net```, ```--ipc``` 붙이니까 rviz가 안되네... 이부분 해결 필요 
   * 도커 컨테이너에서 ```ROS_IP```, ```ROS_HOSTNAME```, ```ROS_MASTER_URI``` 환경 변수 값만 잘 설정하면 굳이 해당 옵션을 줄 필요가 없음 [(참고 링크)](https://www.ybliu.com/2020/05/ros-remote-debgging-and-communication.html)
-  * ``` bash   fdfd ```
+
+- 도커 환경에서 ROS network를 다음과 같이 설정한다: 
+```bash 
+# ~/.bashrc 에서 
+
+export ROS_IP=172.17.0.2
+export ROS_HOSTNAME=$ROS_IP
+export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of local PC for ROS Master 
+```
  
   
   

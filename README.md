@@ -8,7 +8,7 @@
 
 ### 로컬 PC에 Webots 설치하기 
 * 로컬 PC에 [ROS Melodic](http://wiki.ros.org/melodic)이 설치 된 것으로 간주한다 
-* [Installation Procedure](https://cyberbotics.com/doc/guide/installation-procedure#installation-procedure)을 참고해서 webots을 설치한다 
+* [Installation Procedure](https://cyberbotics.com/doc/guide/installation-procedure#installation-procedure)을 참고해서 [webots을 설치](https://cyberbotics.com/)한다 
 * 
 * Webots [Environment Variables](https://www.cyberbotics.com/doc/guide/running-extern-robot-controllers?tab-os=linux&tab-language=python#environment-variables) 할당 (webots 함수 패키지 추가하기)
   ```bash

@@ -102,7 +102,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
 
 
 #### 5. UR10 로봇 제어
-
+* 자세한 UR10 로봇 제어과 관련된 내용은 [여기 링크](https://cyberbotics.com/doc/guide/ure)를 참고한다. 
 
   ```bash   
   ~$ roslaunch ur10_e_moveit_config ur10_e_moveit_planning_execution.launch

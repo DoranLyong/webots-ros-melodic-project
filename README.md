@@ -2,8 +2,9 @@
 
 [실행환경]
 * Ubuntu 18.04 
-* Nvidia GPU driver
 * ROS Melodic  
+* Nvidia GPU driver (CUDA 11.2가 가능한 GPU 디바이스)
+
 
 
 ### 로컬 PC에 Webots 설치하기 

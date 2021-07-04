@@ -111,7 +111,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
   ~$ roslaunch ur10_e_moveit_config moveit_rviz.launch config:=true   
   ```
 * 여기까지 실행이 끝났다면 webots의 가상환경이 ROS rviz에 연동된 것을 확인할 수 있다 
-* 콘솔 명령을 통한 간단한 인터페이스 튜토리얼을 보고 싶다면 다시 새로운 터미널을 켜고 해당 도커 컨테이너를 실행한 뒤 다음 ROS 패키지를 실행한다: 
+* 콘솔 명령을 통해 MoveIt에 간단한 명령을 입력하는 인터페이스 튜토리얼을 보고 싶다면, 다시 새로운 터미널을 켜고 해당 도커 컨테이너를 실행한 뒤 다음 ROS 패키지를 실행한다: 
   ```bash
   ~$ rosrun moveit_tutorials move_webots_ur_e_python_interface.py  
   ```

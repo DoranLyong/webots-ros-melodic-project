@@ -1,4 +1,4 @@
-# webots-ros-melodic-project (미완성)
+# webots-ros-melodic-project (ongoing)
 
 [실행환경]
 * Ubuntu 18.04 
@@ -102,6 +102,8 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
 
 
 #### 5. UR10 로봇 제어
+
+##### MoveIt 활용 예시 
 * 자세한 UR10 로봇 제어과 관련된 내용은 [여기 링크](https://cyberbotics.com/doc/guide/ure)를 참고한다. 
 
   ```bash  
@@ -118,7 +120,8 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
   * ```x, y, z``` 좌표를 입력하면 moveit 상의 머니퓰레이터가 움직이면서 webots 가상환경과 연동된 것을 확인할 수 있다 
   * (ex) ```0.8, -0.3, 0.8``` 
   
-
+##### Grippers 
+* [다음 링크](https://cyberbotics.com/doc/guide/gripper-actuators#robotiq-3f-gripper) 참고
 
 
 - [ ] 로봇 핸드의 pick-up 기능 코드 추가 

@@ -107,7 +107,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
 * webots 시뮬레이션 상의 UR10e 로봇을 제어하기 위해서는 webots 상의 controller를 ```<extern>``` 값으로 할당해야 한다. 
 * 제어 코드는 [ROS 통신으로 센싱 값을 주고 받으면서](https://github.com/cyberbotics/webots_ros/blob/master/scripts/ros_controller.py) 처리된 제어 신호를 [webots world의 로봇 객체에 할당하는](https://github.com/cyberbotics/webots_ros/blob/master/scripts/ros_python.py) 방식으로 코딩한다 
 
-##### MoveIt 활용 예시 
+##### (1) MoveIt 활용 예시 
 * [User Guide](https://cyberbotics.com/doc/guide/ure?tab-language=python#ros) 참고 
 
   ```bash  
@@ -127,7 +127,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
   * ```x, y, z``` 좌표를 입력하면 moveit 상의 머니퓰레이터가 움직이면서 webots 가상환경과 연동된 것을 확인할 수 있다 
   * (ex) ```0.8, -0.3, 0.8``` 
 
-##### 커스텀 제어 예시 - Grippers & URe joints 제어 
+##### (2) 커스텀 제어 예시 - Grippers & URe joints 제어 
 * [webots_ros를 통한 컨트롤러 예시](https://github.com/cyberbotics/webots_ros/tree/master/scripts) 참고 
 * [사용된 Gripper의 joints 정보](https://cyberbotics.com/doc/guide/gripper-actuators#robotiq-3f-gripper) 및 [UR10e 로봇의 joints 정보](https://cyberbotics.com/doc/guide/ure?tab-language=python) 참고 
 * webots controller 코드 예시 (without ROS) [.c 버전](https://github.com/cyberbotics/webots/blob/master/projects/robots/universal_robots/controllers/ure_can_grasper/ure_can_grasper.c)  / [.py 버전](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/controllers/ure_grasper_tutorial/ure_grasper_tutorial.py)
@@ -138,7 +138,8 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
 ##### 개발 Tip
 * [User Guide](https://cyberbotics.com/doc/guide/ure?tab-language=python#ros)의 ```roslaunch ur_e_webots ur10e.launch``` 패키지를 참고한다 
 * 위의 패키지는 [ur_e_webots 깃허브](https://github.com/cyberbotics/webots/tree/released/projects/robots/universal_robots/resources/ros_package/ur_e_webots)에서 확인 할 수 있다 
-* 
+* 해당 패키지의 ```scripts``` 디렉토리로 가면 [universal_robots_ros.py](https://github.com/cyberbotics/webots/blob/released/projects/robots/universal_robots/resources/ros_package/ur_e_webots/scripts/universal_robots_ros.py)가 있다. 
+* 이 코드를 보면 
 
 
 

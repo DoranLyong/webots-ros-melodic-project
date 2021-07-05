@@ -152,7 +152,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
   [... 생략...] 
 
   # Main loop:
-  while robot.step(timestep) != -1:
+  while robot.step(timestep) != -1:  # 이 루프는 webots world가 실행되기 위해 반드시 필요하다 
     pass 
   ``` 
 * 즉, webots 상의 로봇을 제어하는 코드는 [ure_grasper_tutorial.py](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/controllers/ure_grasper_tutorial/ure_grasper_tutorial.py)를 참고하고, webots world의 센싱 데이터를 받고 처리한 뒤에 다시 webots world의 로봇을 제어하기 위한 코드는 [ur_e_webots](https://github.com/cyberbotics/webots/tree/released/projects/robots/universal_robots/resources/ros_package/ur_e_webots) 패키지를 참고한다 

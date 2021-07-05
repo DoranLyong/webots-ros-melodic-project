@@ -107,6 +107,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
 * 제어 코드는 [ROS 통신으로 센싱 값을 주고 받으면서](https://github.com/cyberbotics/webots_ros/blob/master/scripts/ros_controller.py) 처리된 제어 신호를 [webots world의 로봇 객체에 할당하는](https://github.com/cyberbotics/webots_ros/blob/master/scripts/ros_python.py) 방식으로 코딩한다 
 
 ##### MoveIt 활용 예시 
+* [User Guide](https://cyberbotics.com/doc/guide/ure?tab-language=python#ros) 참고 
 
   ```bash  
   # MoveIt 연동 패키지 예시 

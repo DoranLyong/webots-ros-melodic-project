@@ -139,14 +139,29 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
 * [User Guide](https://cyberbotics.com/doc/guide/ure?tab-language=python#ros)의 ```roslaunch ur_e_webots ur10e.launch``` 패키지를 참고한다 
 * 위의 패키지는 [ur_e_webots 깃허브](https://github.com/cyberbotics/webots/tree/released/projects/robots/universal_robots/resources/ros_package/ur_e_webots)에서 확인 할 수 있다 
 * 해당 패키지의 ```scripts``` 디렉토리로 가면 [universal_robots_ros.py](https://github.com/cyberbotics/webots/blob/released/projects/robots/universal_robots/resources/ros_package/ur_e_webots/scripts/universal_robots_ros.py)가 있다. 
-* 이 코드를 보면 
+* 이 코드를 보면 webots controller 코드처럼: 
+  ```python
+  from controller import Robot
+
+  # create the Robot instance.
+  robot = Robot()
+
+  # get the time step of the current world.
+  timestep = int(robot.getBasicTimeStep())
+
+  [... 생략...] 
+
+  
+
+  # Main loop:
+  while robot.step(timestep) != -1:
+    pass 
+  ```
 
 
 
 #### 6. 기타 
 * 그 이외 webots과 관련된 내용은 [webots_ros github](https://github.com/cyberbotics/webots_ros) 및 [ros.org의 webots 위키](http://wiki.ros.org/webots) 참고. 
-
-
 
 ***
 

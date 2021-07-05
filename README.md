@@ -121,12 +121,11 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
   * (ex) ```0.8, -0.3, 0.8``` 
 
 ##### 직접 제어 방식 ?
-* [예시 코드](https://github.com/cyberbotics/webots/blob/master/projects/robots/universal_robots/controllers/ure_can_grasper/ure_can_grasper.c) 참고 
 * [webots_ros를 통한 컨트롤러 예시](https://github.com/cyberbotics/webots_ros/tree/master/scripts) 참고 
 
 ##### Grippers 
 * [다음 링크](https://cyberbotics.com/doc/guide/gripper-actuators#robotiq-3f-gripper) 참고
-
+* [예시 코드](https://github.com/cyberbotics/webots/blob/master/projects/robots/universal_robots/controllers/ure_can_grasper/ure_can_grasper.c) 참고 
 
 
 - [ ] 로봇 핸드의 pick-up 기능 코드 추가 

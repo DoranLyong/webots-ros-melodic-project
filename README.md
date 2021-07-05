@@ -135,6 +135,10 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
 
 - [x] 로봇 핸드의 pick-up 기능 코드 추가 
 
+##### 개발 Tip
+* 
+
+
 
 #### 6. 기타 
 * 그 이외 webots과 관련된 내용은 [webots_ros github](https://github.com/cyberbotics/webots_ros) 및 [ros.org의 webots 위키](http://wiki.ros.org/webots) 참고. 

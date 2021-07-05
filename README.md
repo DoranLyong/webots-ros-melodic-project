@@ -126,7 +126,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
 * [webots_ros를 통한 컨트롤러 예시](https://github.com/cyberbotics/webots_ros/tree/master/scripts) 참고 
 * [사용된 Gripper의 joints 정보](https://cyberbotics.com/doc/guide/gripper-actuators#robotiq-3f-gripper) 참고
 * [UR10e 로봇의 joints 정보](https://cyberbotics.com/doc/guide/ure?tab-language=python) 참고 
-* 제어 코드 예시 [.c 버전](https://github.com/cyberbotics/webots/blob/master/projects/robots/universal_robots/controllers/ure_can_grasper/ure_can_grasper.c) 참고 (without ROS) / [.py 버전](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/controllers/ure_grasper_tutorial/ure_grasper_tutorial.py)
+* webots controller 코드 예시 (without ROS) [.c 버전](https://github.com/cyberbotics/webots/blob/master/projects/robots/universal_robots/controllers/ure_can_grasper/ure_can_grasper.c)  / [.py 버전](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/controllers/ure_grasper_tutorial/ure_grasper_tutorial.py)
 
 
 - [x] 로봇 핸드의 pick-up 기능 코드 추가 

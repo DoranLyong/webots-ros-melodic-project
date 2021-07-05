@@ -151,8 +151,6 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
 
   [... 생략...] 
 
-  
-
   # Main loop:
   while robot.step(timestep) != -1:
     pass 

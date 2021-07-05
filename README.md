@@ -122,7 +122,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
   * ```x, y, z``` 좌표를 입력하면 moveit 상의 머니퓰레이터가 움직이면서 webots 가상환경과 연동된 것을 확인할 수 있다 
   * (ex) ```0.8, -0.3, 0.8``` 
 
-##### 커스텀 제어 - Grippers & URe joints 제어 
+##### 커스텀 제어 예시 - Grippers & URe joints 제어 
 * [webots_ros를 통한 컨트롤러 예시](https://github.com/cyberbotics/webots_ros/tree/master/scripts) 참고 
 * [다음 링크](https://cyberbotics.com/doc/guide/gripper-actuators#robotiq-3f-gripper) 참고
 * [예시 제어 코드](https://github.com/cyberbotics/webots/blob/master/projects/robots/universal_robots/controllers/ure_can_grasper/ure_can_grasper.c) 참고 

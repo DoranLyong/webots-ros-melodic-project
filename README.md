@@ -170,7 +170,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
 * 한 대는 ```ROS_MASTER```와 ```webots world```가 실행될 경연 당일 준비될 경기장 컴퓨터(주최 측에서 준비), 다른 한 대는 경기 참여자의 개인 컴퓨터이다. 
 * 경기장 컴퓨터는 ```ROS_MASTER``` 및 ```webots world``` 가 실행되는 서버 역할이다. 
 * 경기 참여자의 ```ROS_HOST```는 ```ROS_MASTER``` 에 연결되어 ```webots world```로 부터 센싱 데이터를 받고 UR10e 로봇 제어를 통해 재활용 쓰레기를 분리수거 하는 과업(task)을 수행한다. 
-* 즉, 경기 참여자가 개인 로컬 PC에 기본적으로 갖춰야할 코드는 [roslaunch ur_e_webots ur5e.launch](https://cyberbotics.com/doc/guide/ure?tab-language=python#ros) 와 같이 webots world 의 스텝을 실행 시킬수 있는 패키지와 [visual_sensor_enable.py](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/catkin_ws/src/ur_e_webots/scripts/visual_sensor_enable.py) 패키지 처럼 webots world 의 센서 객체들이 ```ROS_MASTER```로 센싱 값을 토픽으로 발행하도록 요청하는 노드이다. 
+* 즉, 경기 참여자가 개인 로컬 PC에 기본적으로 갖춰야 할 코드는 [roslaunch ur_e_webots ur5e.launch](https://cyberbotics.com/doc/guide/ure?tab-language=python#ros) 와 같이 webots world의 스텝을 실행시킬 수 있는 패키지와 [visual_sensor_enable.py](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/catkin_ws/src/ur_e_webots/scripts/visual_sensor_enable.py) 패키지처럼 webots world의 센서 객체들이 ```ROS_MASTER```로 센싱 값을 토픽으로 발행하도록 요청하는 노드이다. 
 
 
 ***

@@ -100,16 +100,6 @@ if __name__ =='__main__':
 
 
 
-    """ UR10 controller publish
-    """
-
-
-
-
-
-
-
-
     try:
         rospy.spin()
 

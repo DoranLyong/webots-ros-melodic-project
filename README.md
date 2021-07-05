@@ -165,6 +165,15 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
 
 ***
 
+#### 7. 대회 준비를 위한 Tip
+* 경기는 물리적으로 분리된 두 대의 컴퓨터로 진행된다. 
+* 한 대는 ROS_MASTER와 webots world가 실행될 경기 당일 준비될 경기장 컴퓨터(경기 주최측에서 준비), 다른 한 대는 경기 참여자의 개인 컴퓨터이다. 
+* 경기장 컴퓨터는 ```ROS_MASTER``` 및 ```webots world``` 가 실행되는 서버 역할이다. 
+* 
+
+
+
+
 #### Reference 
 * [ROS](http://wiki.ros.org/Distributions) & [webots](https://cyberbotics.com/) 설치 
 * [universal_robots](http://wiki.ros.org/universal_robots) 설치 

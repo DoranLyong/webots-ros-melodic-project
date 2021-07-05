@@ -135,7 +135,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for RO
 
 - [x] 로봇 핸드의 pick-up 기능 코드 추가 
 
-##### webots-ROS 개발 Tip
+##### (3) webots-ROS 개발 Tip
 * [User Guide](https://cyberbotics.com/doc/guide/ure?tab-language=python#ros)의 ```roslaunch ur_e_webots ur10e.launch``` 패키지를 참고한다 
 * 위의 패키지는 [ur_e_webots 깃허브](https://github.com/cyberbotics/webots/tree/released/projects/robots/universal_robots/resources/ros_package/ur_e_webots)에서 확인 할 수 있다 
 * 해당 패키지의 ```scripts``` 디렉토리로 가면 [universal_robots_ros.py](https://github.com/cyberbotics/webots/blob/released/projects/robots/universal_robots/resources/ros_package/ur_e_webots/scripts/universal_robots_ros.py)가 있다. 

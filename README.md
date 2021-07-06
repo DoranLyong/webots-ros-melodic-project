@@ -12,6 +12,13 @@
 (2) [universal_robots](http://wiki.ros.org/universal_robots) 패키지를 ROS 버전에 맞게 설치한다 (i.e., ```melodic```) <br/>
   * ```apt-get``` 이 아닌 ```git clone```으로 소스빌드 할 것을 권장한다 
 
+```bash
+# 로컬 PC의 ~/.bashrc 에서 
+
+export ROS_IP=x.x.x.x   # 로컬 PC의 이더넷 IP 
+export ROS_HOSTNAME=$ROS_IP
+export ROS_ROS_MASTER_URI=http://$ROS_IP:11311   # eth IP of your local PC for ROS Master 
+```
 ***
 
 ### Webots World 설치하기 
@@ -28,6 +35,7 @@
 
 
 #### 2. Pull and Install the docker image 
+* 
 ```bash
 ~$ sudo chmod a+x make_webots-ros_container.bash run_webots-ros_container.bash  # 실행 권한 부여 
 
@@ -54,13 +62,6 @@ export ROS_HOSTNAME=$ROS_IP
 export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC for ROS Master 
 ```
 
-```bash
-# 로컬 PC의 ~/.bashrc 에서 
-
-export ROS_IP=x.x.x.x   # 로컬 PC의 이더넷 IP 
-export ROS_HOSTNAME=$ROS_IP
-export ROS_ROS_MASTER_URI=http://$ROS_IP:11311   # eth IP of your local PC for ROS Master 
-```
 
   
 

@@ -1,5 +1,5 @@
 xhost + 
 
-docker start webots_melodic
+sudo docker start webots_melodic
 
-docker exec -it webots_melodic bash
+sudo docker exec -it webots_melodic bash

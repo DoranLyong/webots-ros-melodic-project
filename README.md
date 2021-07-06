@@ -60,7 +60,8 @@
 ```bash 
 # 도커의 ~/.bashrc 에서 
 
-export ROS_IP=172.17.0.2  # in the docker container for webots world
+export ROS_IP=172.17.0.x  # in the docker container for webots world
+                          # 현재 생성된 도커 컨테이너의 주소를 기입하기  
 export ROS_HOSTNAME=$ROS_IP
 export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for ROS Master 
 ```

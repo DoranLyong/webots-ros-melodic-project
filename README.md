@@ -88,7 +88,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC
 
 * 위의 명령은 다음과 같이 간략하게 실행시킬 수 있다 
 ```bash
-~# ~/run_WebotsWorld_all.bash  # webots -> sensor_enable.bash -> python objects_random_place.py 순으로 실행됨 
+~# ~/run_WebotsWorld_all.bash  # webots -> ur_e_webots.bash -> sensor_enable.bash 순으로 실행됨 
 
 ~# python ~/objects_random_place.py   # 새로운 도커 터미널에서 실행할 것 
 ```

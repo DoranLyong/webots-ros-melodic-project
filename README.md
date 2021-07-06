@@ -92,7 +92,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC
 
 ~# python ~/objects_random_place.py   # 새로운 도커 터미널에서 실행할 것 
 ```
-※ 위의 명령어는 하나도 빠짐없이 실행되어야 webots world가 실행된다.
+※ 두 방법중에 하나라도 빠짐없이 실행되어야 webots world가 실행된다.
 
 
 ***

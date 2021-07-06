@@ -52,7 +52,7 @@ export ROS_ROS_MASTER_URI=http://<경기장 PC의 IP>:11311   # eth IP for ROS M
 
 ~$ ./make_webots-ros_container.bash  # 도커 이미지 설치 및 컨테이너 생성 
 
-~$ ./run_webots-ros_container.bash
+~$ ./run_webots-ros_container.bash   # webots world가 설치된 컨테이너 실행 
 
 ```
 

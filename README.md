@@ -55,8 +55,6 @@ export ROS_ROS_MASTER_URI=http://<경기장 PC의 IP>:11311   # eth IP for ROS M
 ~$ ./run_webots-ros_container.bash   # webots world가 설치된 컨테이너 실행 
 
 ```
-
-
 <br/>
 
 * 위의 명령어가 실행되면 ```webots_melodic``` 이란 이름으로 도커 컨테이너가 생성된다 

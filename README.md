@@ -74,6 +74,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC
   
 
 #### 3. Run the webots world and Connect with ROS (여기서 부터는 도커 환경에서...)
+* 로컬 PC 에서 ```roscore```를 실행한다 
 * 도커 환경에서 아래 명령어를 각각 실행한다 (각각 새로운 도커 터미널에서 실행할 것 )
 ```bash
 ~# webots 

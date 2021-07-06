@@ -7,7 +7,7 @@
 
 
 
-### 로컬 PC에 ```universal_robot```과 관련된 패키지 설치하기 
+### 로컬 PC에 [universal_robot](https://cyberbotics.com/doc/guide/ure#moveit) ROS 패키지 설치하기 
 (1) 로컬 PC에 [ROS Melodic](http://wiki.ros.org/melodic)이 설치 된 것으로 간주한다 <br/>
 (2) [universal_robots](http://wiki.ros.org/universal_robots) 패키지를 ROS 버전에 맞게 설치한다 (i.e., ```melodic```) <br/>
   * ```apt-get``` 이 아닌 ```git clone```으로 소스빌드 할 것을 권장한다 

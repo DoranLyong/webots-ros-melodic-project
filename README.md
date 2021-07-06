@@ -12,6 +12,8 @@
 (2) [universal_robots](http://wiki.ros.org/universal_robots) 패키지를 ROS 버전에 맞게 설치한다 (i.e., ```melodic```) <br/>
   * ```apt-get``` 이 아닌 ```git clone```으로 소스빌드 할 것을 권장한다 
 
+(3) ```ROS_NETWORK``` 는 다음과 같이 설정한다 
+
 ```bash
 # 로컬 PC의 ~/.bashrc 에서 
 

@@ -35,7 +35,7 @@ export ROS_ROS_MASTER_URI=http://$ROS_IP:11311   # eth IP of your local PC for R
 
 
 #### 2. Pull and Install the docker image 
-* 
+* 현재 깃허브 레포지토리에 있는 파일을 가지고 아래 명령어를 순서대로 실행한다 
 ```bash
 ~$ sudo chmod a+x make_webots-ros_container.bash run_webots-ros_container.bash  # 실행 권한 부여 
 

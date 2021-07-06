@@ -1,6 +1,6 @@
-# [핸드 Grasp]
+# [Gripper Grasp]
 
-rostopic pub /grp_follow_joint_trajectory/goal control_msgs/FollowJointTrajectoryActionGoal "header:
+~$ rostopic pub /grp_follow_joint_trajectory/goal control_msgs/FollowJointTrajectoryActionGoal "header:
   seq: 0
   stamp:
     secs: 0
@@ -38,9 +38,9 @@ goal:
 
 
 
-# [핸드 Release] 
+# [Gripper Release] 
 
-rostopic pub /grp_follow_joint_trajectory/goal control_msgs/FollowJointTrajectoryActionGoal "header:
+~$ rostopic pub /grp_follow_joint_trajectory/goal control_msgs/FollowJointTrajectoryActionGoal "header:
   seq: 0
   stamp:
     secs: 0

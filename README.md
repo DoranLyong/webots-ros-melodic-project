@@ -145,7 +145,6 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC
 * webots controller 코드 예시 (without ROS) [.c 버전](https://github.com/cyberbotics/webots/blob/master/projects/robots/universal_robots/controllers/ure_can_grasper/ure_can_grasper.c)  / [.py 버전](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/controllers/ure_grasper_tutorial/ure_grasper_tutorial.py)
 
 
-- [x] 로봇 핸드의 pick-up 기능 코드 추가 
 
 ##### (3) webots-ROS 개발 Tip
 * [User Guide](https://cyberbotics.com/doc/guide/ure?tab-language=python#ros)의 ```roslaunch ur_e_webots ur10e.launch``` 패키지를 참고한다 

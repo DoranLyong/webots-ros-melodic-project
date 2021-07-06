@@ -42,21 +42,26 @@
 
 * 위의 명령어가 실행되면 ```webots_melodic``` 이란 이름으로 도커 컨테이너가 생성된다 
 * 해당 컨테이너를 다시 실행하고 싶다면 로컬 PC의 터미널에서 ```~$ ./run_webots-ros_container.bash``` 명령을 다시 실행한다 
-
-
-- [x] ```--net```, ```--ipc``` 붙이니까 rviz가 안되네... 이부분 해결 필요 
-  * 도커 컨테이너에서 ```ROS_IP```, ```ROS_HOSTNAME```, ```ROS_MASTER_URI``` 환경 변수 값만 잘 설정하면 굳이 해당 옵션을 줄 필요가 없음 [(참고 링크)](https://www.ybliu.com/2020/05/ros-remote-debgging-and-communication.html)
+* 도커 컨테이너에서 ```ROS_IP```, ```ROS_HOSTNAME```, ```ROS_MASTER_URI``` 환경 변수 값만 잘 설정하면 굳이 해당 옵션을 줄 필요가 없음 [(참고 링크)](https://www.ybliu.com/2020/05/ros-remote-debgging-and-communication.html)
 
 - 도커 환경에서 ROS network를 다음과 같이 설정한다: 
 ```bash 
 # 도커의 ~/.bashrc 에서 
 
 export ROS_IP=172.17.0.x  # in the docker container for webots world
-                          # 현재 생성된 도커 컨테이너의 주소를 기입하기  
+                          # 현재 생성된 도커 컨테이너의 주소를 확인하고 입력하기  
 export ROS_HOSTNAME=$ROS_IP
-export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # IP of your local PC for ROS Master 
+export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC for ROS Master 
 ```
-- [x] 로컬 PC의 ROS와 도커 컨테이너 상의 ROS가 서로 같은 roscore에 연결되도록 수정  
+
+```bash
+# 로컬 PC의 ~/.bashrc 에서 
+
+export ROS_IP=x.x.x.x   # 로컬 PC의 이더넷 IP 
+export ROS_HOSTNAME=$ROS_IP
+export ROS_ROS_MASTER_URI=http://$ROS_IP:11311   # eth IP of your local PC for ROS Master 
+```
+
   
 
 #### 3. Run the webots world and Connect with ROS (여기서 부터는 도커 환경에서...)

@@ -149,32 +149,6 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC
 * webots controller 코드 예시 (without ROS) [.c 버전](https://github.com/cyberbotics/webots/blob/master/projects/robots/universal_robots/controllers/ure_can_grasper/ure_can_grasper.c)  / [.py 버전](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/controllers/ure_grasper_tutorial/ure_grasper_tutorial.py)
 
 
-
-##### (3) webots-ROS 개발 Tip
-* [User Guide](https://cyberbotics.com/doc/guide/ure?tab-language=python#ros)의 ```roslaunch ur_e_webots ur10e.launch``` 패키지를 참고한다 
-* 위의 패키지는 [ur_e_webots 깃허브](https://github.com/cyberbotics/webots/tree/released/projects/robots/universal_robots/resources/ros_package/ur_e_webots)에서 확인 할 수 있다 
-* 해당 패키지의 ```scripts``` 디렉토리로 가면 [universal_robots_ros.py](https://github.com/cyberbotics/webots/blob/released/projects/robots/universal_robots/resources/ros_package/ur_e_webots/scripts/universal_robots_ros.py)가 있다. 
-* 이 코드를 보면 [ure_grasper_tutorial.py](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/controllers/ure_grasper_tutorial/ure_grasper_tutorial.py) 코드와 유사한 형태를 가지고 있다 : 
-  ```python
-  from controller import Robot
-
-  # create the Robot instance.
-  robot = Robot()
-
-  # get the time step of the current world.
-  timestep = int(robot.getBasicTimeStep())
-
-  [... 생략...] 
-
-  # Main loop:
-  while robot.step(timestep) != -1:  # 이 루프는 webots world가 실행되기 위해 반드시 필요하다 
-    pass 
-  ``` 
-* 즉, webots 상의 로봇을 제어하는 코드는 [ure_grasper_tutorial.py](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/controllers/ure_grasper_tutorial/ure_grasper_tutorial.py)를 참고하고, webots world의 센싱 데이터를 받고 처리한 뒤에 다시 webots world의 로봇을 제어하기 위한 코드는 [ur_e_webots](https://github.com/cyberbotics/webots/tree/released/projects/robots/universal_robots/resources/ros_package/ur_e_webots) 패키지를 참고한다 
-  
-
-
-
 #### 6. 기타 
 * 그 이외 webots과 관련된 내용은 [webots_ros github](https://github.com/cyberbotics/webots_ros) 및 [ros.org의 webots 위키](http://wiki.ros.org/webots) 참고. 
 

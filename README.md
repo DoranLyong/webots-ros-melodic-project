@@ -65,21 +65,23 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC
   
 
 #### 3. Run the webots world and Connect with ROS (여기서 부터는 도커 환경에서...)
-* 도커 환경에서 아래 명령어를 실행한다
-* 그러면 대회에 쓰일 webots world가 열린다 
+* 도커 환경에서 아래 명령어를 각각 실행한다 (각각 새로운 도커 터미널에서 실행할 것 )
 ```bash
-~$ ~/run_WebotsWorld_all.bash
+~# webots 
+
+~# ur_e_webots.bash   # webots world의 스텝을 실행시킬 수 있는 ROS 패키지 실행 
+
+~# sensor_enable.bash  # webots world의 센서 장비가 토픽을 ROS_MASTER터로 발행하도록 서비스 요청(call)
+
+~# python objects_random_place.py   # 물체 위치 랜덤 
 ```
-* 만약 webots world 환경을 새로고침 했다면 ```ROS_MASTER```와 연결이 끊어지기 때문에 전부 끄고 위의 명령을 새로 시작하거나 아래 명령을 순서대로 실행한다: 
+
+* 위의 명령은 다음과 같이 간략하게 실행시킬 수 있다 
 ```bash
-~$ ur_e_webots.bash   # webots world의 스텝을 실행시킬 수 있는 ROS 패키지 실행 
+~# ~/run_WebotsWorld_all.bash  # webots -> sensor_enable.bash -> python objects_random_place.py 순으로 실행됨 
 
-~$ sensor_enable.bash  # webots world의 센서 장비가 토픽을 ROS_MASTER터로 발행하도록 서비스 요청(call)
+~# python objects_random_place.py   # 새로운 도커 터미널에서 실행할 것 
 ```
-
-- [x] webots world 에서 센서 데이터(RGB, depth_map)를 ros topic/service 정보 받기 
-- [x] 추후 ```roslaunch```로 명령어를 간소화 시키자 
-
 
 ***
 ### 로컬 PC에서 Webots World 제어하기 

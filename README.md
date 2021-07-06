@@ -69,18 +69,18 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC
 ```bash
 ~# webots 
 
-~# ur_e_webots.bash   # webots world의 스텝을 실행시킬 수 있는 ROS 패키지 실행 
+~# ~/ur_e_webots.bash   # webots world의 스텝을 실행시킬 수 있는 ROS 패키지 실행 
 
-~# sensor_enable.bash  # webots world의 센서 장비가 토픽을 ROS_MASTER터로 발행하도록 서비스 요청(call)
+~# ~/sensor_enable.bash  # webots world의 센서 장비가 토픽을 ROS_MASTER터로 발행하도록 서비스 요청(call)
 
-~# python objects_random_place.py   # 물체 위치 랜덤 
+~# python ~/objects_random_place.py   # 물체 위치 랜덤 
 ```
 
 * 위의 명령은 다음과 같이 간략하게 실행시킬 수 있다 
 ```bash
 ~# ~/run_WebotsWorld_all.bash  # webots -> sensor_enable.bash -> python objects_random_place.py 순으로 실행됨 
 
-~# python objects_random_place.py   # 새로운 도커 터미널에서 실행할 것 
+~# python ~/objects_random_place.py   # 새로운 도커 터미널에서 실행할 것 
 ```
 
 ***

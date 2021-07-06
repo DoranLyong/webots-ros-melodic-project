@@ -8,7 +8,7 @@
 
 
 ### 로컬 PC에 __universal_robot__ ROS 패키지 설치하기 
-(1) 로컬 PC에 [ROS Melodic](http://wiki.ros.org/melodic)이 설치 된 것으로 간주한다 <br/>
+(1) 로컬 PC에 [ROS Melodic](http://wiki.ros.org/melodic)이 설치된 것으로 간주한다 <br/>
 (2) [universal_robots](http://wiki.ros.org/universal_robots) 패키지를 ROS 버전에 맞게 설치한다 (i.e., ```melodic```) <br/>
   * ```apt-get``` 이 아닌 ```git clone```으로 소스빌드 할 것을 권장한다 
 
@@ -87,11 +87,13 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC
 ```
 
 * 위의 명령은 다음과 같이 간략하게 실행시킬 수 있다 
-```bash
-~# ~/run_WebotsWorld_all.bash  # webots -> ur_e_webots.bash -> sensor_enable.bash 순으로 실행됨 
+    ```bash
+    ~# ~/run_WebotsWorld_all.bash  # webots -> ur_e_webots.bash -> sensor_enable.bash 순으로 실행됨 
 
-~# python ~/objects_random_place.py   # 새로운 도커 터미널에서 실행할 것 
-```
+    ~# python ~/objects_random_place.py   # 새로운 도커 터미널에서 실행할 것 
+    ```
+<br/>
+
 ※ 두 방법중에 하나라도 빠짐없이 실행되어야 webots world가 실행된다.
 
 
@@ -99,8 +101,8 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC
 ### 로컬 PC에서 Webots World 제어하기 
 
 
-#### 4. 영상 데이터 Subscribe 테스트 
-* 여기까지 수행했다면 webots world 에서 ROS Master로 RGB 카메라 및 Range Finder 데이터 토픽(topic)을 발행한다 
+#### 4. 영상 데이터 topic name
+* 여기까지 수행했다면 webots world 에서 ROS Master로 RGB 카메라 및 Range Finder 데이터 토픽(topic)을 발행한다
 * 아래 토픽 버스 이름을 통해 영상 정보를 확인할 수 있다 
 * [Image topic subscribe](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/catkin_ws/src/ur_e_webots/scripts/webots_ros_tutorial.py) 예시 
 ```bash 
@@ -130,15 +132,11 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC
 
 
 
-* [3D Rotation Converter 계산기](https://www.andre-gaschler.com/rotationconverter/)
 
 
 
 
 #### 5. UR10 로봇 제어
-* 자세한 UR10 로봇 제어과 관련된 내용은 [메뉴얼](https://cyberbotics.com/doc/guide/ure)을 참고한다. 
-* webots 시뮬레이션 상의 UR10e 로봇을 제어하기 위해서는 webots 상의 controller를 ```<extern>``` 값으로 할당해야 한다. 
-* 제어 코드는 [ROS 통신으로 센싱 값을 주고 받으면서](https://github.com/cyberbotics/webots_ros/blob/master/scripts/ros_controller.py) 처리된 제어 신호를 [webots world의 로봇 객체에 할당하는](https://github.com/cyberbotics/webots_ros/blob/master/scripts/ros_python.py) 방식으로 코딩한다 
 
 ##### (1) MoveIt 활용 예시 
 * [User Guide](https://cyberbotics.com/doc/guide/ure?tab-language=python#ros) 참고 
@@ -159,6 +157,10 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC
 * [사용된 Gripper의 joints 정보](https://cyberbotics.com/doc/guide/gripper-actuators#robotiq-3f-gripper) 및 [UR10e 로봇의 joints 정보](https://cyberbotics.com/doc/guide/ure?tab-language=python) 참고 
  * 간단한 Gripper 조작을 위한 토픽 발행 형태는 [간단한_핸드조작_토픽_pub.txt](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/%EA%B0%84%EB%8B%A8%ED%95%9C_%ED%95%B8%EB%93%9C%EC%A1%B0%EC%9E%91_%ED%86%A0%ED%94%BD_pub.txt) 참고 
  * UR10e 로봇도 유사한 방식으로 ```~$ rostopic pub /follow_joint_trajectory/goal control_msgs/FollowJointTrajectoryActionGoal``` 을 통해 제어할 수 있음 
+
+* 자세한 UR10 로봇 제어과 관련된 내용은 [메뉴얼](https://cyberbotics.com/doc/guide/ure)을 참고한다. 
+* webots 시뮬레이션 상의 UR10e 로봇을 제어하기 위해서는 webots 상의 controller를 ```<extern>``` 값으로 할당해야 한다. 
+* 제어 코드는 [ROS 통신으로 센싱 값을 주고 받으면서](https://github.com/cyberbotics/webots_ros/blob/master/scripts/ros_controller.py) 처리된 제어 신호를 [webots world의 로봇 객체에 할당하는](https://github.com/cyberbotics/webots_ros/blob/master/scripts/ros_python.py) 방식으로 코딩한다 
 
 #### 6. 기타 
 * 그 이외 webots과 관련된 내용은 [webots_ros github](https://github.com/cyberbotics/webots_ros) 및 [ros.org의 webots 위키](http://wiki.ros.org/webots) 참고

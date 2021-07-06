@@ -162,8 +162,8 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC
 ##### (2) 커스텀 제어 예시 - Grippers & URe joints 제어 
 * [webots_ros를 통한 컨트롤러 예시](https://github.com/cyberbotics/webots_ros/tree/master/scripts) 참고 
 * [사용된 Gripper의 joints 정보](https://cyberbotics.com/doc/guide/gripper-actuators#robotiq-3f-gripper) 및 [UR10e 로봇의 joints 정보](https://cyberbotics.com/doc/guide/ure?tab-language=python) 참고 
-* webots controller 코드 예시 (without ROS) [.c 버전](https://github.com/cyberbotics/webots/blob/master/projects/robots/universal_robots/controllers/ure_can_grasper/ure_can_grasper.c)  / [.py 버전](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/controllers/ure_grasper_tutorial/ure_grasper_tutorial.py)
-
+ * 간단한 핸드 조작을 위한 토픽 발행 형태는 [간단한_핸드조작_토픽_pub.txt](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/%EA%B0%84%EB%8B%A8%ED%95%9C_%ED%95%B8%EB%93%9C%EC%A1%B0%EC%9E%91_%ED%86%A0%ED%94%BD_pub.txt) 참고 
+ * UR10e 로봇도 유사한 방식으로 ```~$ rostopic pub /follow_joint_trajectory/goal control_msgs/FollowJointTrajectoryActionGoal``` 을 통해 제어할 수 있음 
 
 #### 6. 기타 
 * 그 이외 webots과 관련된 내용은 [webots_ros github](https://github.com/cyberbotics/webots_ros) 및 [ros.org의 webots 위키](http://wiki.ros.org/webots) 참고. 
@@ -182,8 +182,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC
 * webots world의 [UR10e](https://cyberbotics.com/doc/guide/ure) 로봇과 [Gripper](https://cyberbotics.com/doc/guide/gripper-actuators#robotiq-3f-gripper)는 [actionlib.ActionServer()](https://docs.ros.org/en/api/actionlib/html/classactionlib_1_1ActionServer.html) 노드로 제어할 수 있다. 
 * 따라서, 대회 참여자는 [actionlib](http://wiki.ros.org/actionlib#Action_Specification:_Goal.2C_Feedback.2C_.26_Result)를 활용해 [actionlib.ActionServer](https://docs.ros.org/en/api/actionlib/html/action__server_8py_source.html)의 ```goal``` 값으로 [UR10e](https://cyberbotics.com/doc/guide/ure) 와 [Gripper](https://cyberbotics.com/doc/guide/gripper-actuators#robotiq-3f-gripper) 관절(joints)을 제어하는 값을 입력으로 발행하면 된다. 
 * [UR10e.urdf](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/UR10e.urdf) 파일은 현재 레포지토리에 첨부되어 있다.
-  * 간단한 핸드 조작을 위한 토픽 발행 형태는 [간단한_핸드조작_토픽_pub.txt](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/%EA%B0%84%EB%8B%A8%ED%95%9C_%ED%95%B8%EB%93%9C%EC%A1%B0%EC%9E%91_%ED%86%A0%ED%94%BD_pub.txt) 참고 
-  * UR10e 로봇도 유사한 방식으로 ```~$ rostopic pub /follow_joint_trajectory/goal control_msgs/FollowJointTrajectoryActionGoal``` 을 통해 제어할 수 있음 
+
   * [코드 파이프라인은 참고](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/catkin_ws/src/ur_e_webots/scripts/webots_ros_tutorial.py) ; 단, 대회 참여자의 스타일 대로 구성해도 됨 
  ```bash
  # 사용할 관절 목록 

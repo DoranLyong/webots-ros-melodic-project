@@ -151,13 +151,8 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC
   
   ~$ roslaunch ur10_e_moveit_config moveit_rviz.launch config:=true   
   ```
-* 여기까지 실행이 끝났다면 webots의 가상환경이 ROS rviz에 연동된 것을 확인할 수 있다 
-* 콘솔 명령을 통해 MoveIt에 간단한 명령을 입력하는 인터페이스 튜토리얼을 보고 싶다면, 다시 새로운 터미널을 켜고 해당 도커 컨테이너를 실행한 뒤 다음 ROS 패키지를 실행한다: 
-  ```bash
-  ~$ rosrun moveit_tutorials move_webots_ur_e_python_interface.py  
-  ```
-  * ```x, y, z``` 좌표를 입력하면 moveit 상의 머니퓰레이터가 움직이면서 webots 가상환경과 연동된 것을 확인할 수 있다 
-  * (ex) ```0.8, -0.3, 0.8``` 
+* 여기까지 실행이 끝났다면 webots의 가상환경이 MoveIt과 연동되어 제어되는 것을 확인할 수 있다 
+ 
 
 ##### (2) 커스텀 제어 예시 - Grippers & URe joints 제어 
 * [webots_ros를 통한 컨트롤러 예시](https://github.com/cyberbotics/webots_ros/tree/master/scripts) 참고 

@@ -12,7 +12,7 @@ then
 fi
 
 
-docker run -t -d \
+sudo docker run -t -d \
     --name webots_melodic \
     --env="DISPLAY=$DISPLAY" \
     --env="QT_X11_NO_MITSHM=1" \

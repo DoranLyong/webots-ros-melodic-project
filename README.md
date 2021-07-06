@@ -144,8 +144,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC
 * [User Guide](https://cyberbotics.com/doc/guide/ure?tab-language=python#ros) 참고 
 
   ```bash  
-  # webots 센싱 데이터와 제어신호를 주고받기 위한 패키지 예시 
-  ~$ roslaunch ur_e_webots ur10e.launch
+  # 도커 컨테이너의 Webots World의 TimeStep이 동작하는지 확인한 후 실행 
   
   # MoveIt 연동 패키지 예시 
   ~$ roslaunch ur10_e_moveit_config ur10_e_moveit_planning_execution.launch

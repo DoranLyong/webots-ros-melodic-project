@@ -111,7 +111,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC
 /CAM/range_finder/range_image
 ```
 
-##### ※ Camera world → Robot world 변환 행렬 구하기 
+##### ※ Camera world → Robot world 변환 행렬을 구하기 위한 파라미터 
 ```bash 
 [RGB & depth_map devices]
 

@@ -116,9 +116,14 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC
 - Translation[x, y, z] : 1.35272 , 1.3315 , 5.97883e-07
 - Rotation(quaternions)[w, x, y, z] : 0.653284 , -0.270596 , 0.65328 , 0.270597
 
-[UR10e device]
+[UR10e robot base ]
 - Translation[x, y, z] : ? , ? , ? 
 - Rotation(quaternions)[w, x, y, z] : ? , ? , ? , ? 
+
+[World center] 
+- Translation[x, y, z] : 0 , 0 , 0 
+- Rotation(quaternions)[w, x, y, z] : 1 , 0 , 0 , 0 ]
+
 ```
 
 

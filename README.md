@@ -184,7 +184,6 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC
     * [간단한_핸드조작_토픽_pub.txt](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/%EA%B0%84%EB%8B%A8%ED%95%9C_%ED%95%B8%EB%93%9C%EC%A1%B0%EC%9E%91_%ED%86%A0%ED%94%BD_pub.txt) 참고 
 * [UR10e.urdf](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/UR10e.urdf) 파일은 현재 레포지토리에 첨부되어 있다.
 
-  * [코드 파이프라인은 참고](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/catkin_ws/src/ur_e_webots/scripts/webots_ros_tutorial.py) ; 단, 대회 참여자의 스타일 대로 구성해도 됨 
  ```bash
  # 사용할 관절 목록 
  

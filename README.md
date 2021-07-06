@@ -105,6 +105,10 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC
 
 - Translation[x, y, z] : 1.35272 , 1.3315 , 5.97883e-07
 - Rotation(quaternions)[w, x, y, z] : 0.653284 , -0.270596 , 0.65328 , 0.270597
+
+[UR10e device]
+- Translation[x, y, z] : ? , ? , ? 
+- Rotation(quaternions)[w, x, y, z] : ? , ? , ? , ? 
 ```
 
 
@@ -177,15 +181,15 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC
 ***
 
 #### 7. 대회 준비를 위한 Tip
+[경기 내용]
 * 경기는 물리적으로 분리된 두 대의 컴퓨터로 진행된다. 
-* 한 대는 ```ROS_MASTER```와 ```webots world```가 실행될 경연 당일 준비될 경기장 컴퓨터(주최 측에서 준비), 다른 한 대는 경기 참여자의 개인 컴퓨터이다. 
-* 경기장 컴퓨터는 ```ROS_MASTER``` 및 ```webots world``` 가 실행되는 서버 역할이다. 
-* 경기 참여자의 ```ROS_HOST```는 ```ROS_MASTER``` 에 연결되어 ```webots world```로 부터 센싱 데이터를 받고 UR10e 로봇 제어를 통해 재활용 쓰레기를 분리수거 하는 과업(task)을 수행한다. 
-* 즉, 경기 참여자가 개인 로컬 PC에 기본적으로 갖춰야 할 코드는 [roslaunch ur_e_webots ur10e.launch](https://cyberbotics.com/doc/guide/ure?tab-language=python#ros) 와 같이 webots world의 스텝을 실행시킬 수 있는 패키지와 [visual_sensor_enable.py](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/catkin_ws/src/ur_e_webots/scripts/visual_sensor_enable.py) 패키지처럼 webots world의 센서 객체들이 ```ROS_MASTER```로 센싱 값을 토픽으로 발행하도록 요청하는 노드이다. 
-  * webots world에서 발행하는 RGB와 depth 영상 토픽은 [webots_ros_tutorial.py](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/catkin_ws/src/ur_e_webots/scripts/webots_ros_tutorial.py)와 같은 형태로 ```Subscribe``` 하면 된다
-  * ```UR10e``` 로봇의 제어는 위에서 소개된 대로 [ur_e_webots](https://github.com/cyberbotics/webots/tree/released/projects/robots/universal_robots/resources/ros_package/ur_e_webots/scripts) 밑바탕으로 webots world의 스텝이 실행 가능하도록 패키지를 구성하고 [ure_grasper_tutorial.py](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/controllers/ure_grasper_tutorial/ure_grasper_tutorial.py)를 참고해서 [Gripper](https://cyberbotics.com/doc/guide/gripper-actuators#robotiq-3f-gripper) 기능을 추가할 수 있다. 
-  * 개발을 위한 라이브러리는 [cyberbotics.com](https://cyberbotics.com/doc/guide/index), [webots github](https://github.com/cyberbotics/webots/tree/released/projects/robots/universal_robots/resources/ros_package/ur_e_webots), [webots_ros github](https://github.com/cyberbotics/webots_ros) 그리고 [ros.org](http://wiki.ros.org/webots_ros)에서 확인할 수 있다. 
+* 한 대는 ```ROS_MASTER```와 ```webots world```가 실행될 경연 당일 준비될 경기장 컴퓨터(주최 측에서 준비), 다른 하나는 대회 참여자의 개인 컴퓨터이다. 
+* 경기장 컴퓨터는 ```ROS_MASTER``` 및 ```webots world```가 실행되는 서버 역할이다. 
+* 대회 참여자의 ```ROS_HOST```는 ```ROS_MASTER``` 에 연결되어 ```webots world```로 부터 센싱 데이터를 받고 UR10e 로봇 제어를 통해 재활용 쓰레기를 분리수거 하는 과업(task)을 수행한다. 
 
+[대회 참여자가 준비해야할 코드]
+* webots world의 [UR10e](https://cyberbotics.com/doc/guide/ure) 로봇과 [Gripper](https://cyberbotics.com/doc/guide/gripper-actuators#robotiq-3f-gripper)는 [actionlib.ActionServer()](https://docs.ros.org/en/api/actionlib/html/classactionlib_1_1ActionServer.html) 노드로 제어할 수 있다. 
+* 따라서, 대회 참여자는 [actionlib](http://wiki.ros.org/actionlib#Action_Specification:_Goal.2C_Feedback.2C_.26_Result)를 활용해 ```Action Client``` 
 
 ***
 

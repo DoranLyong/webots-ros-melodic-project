@@ -1,3 +1,6 @@
+### roscore가 동작하는 로컬 PC의 터미널에서 실행시켜보기 ### 
+
+
 # [Gripper Grasp]
 
 ~$ rostopic pub /grp_follow_joint_trajectory/goal control_msgs/FollowJointTrajectoryActionGoal "header:

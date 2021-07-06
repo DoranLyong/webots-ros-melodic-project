@@ -19,6 +19,15 @@ export ROS_IP=x.x.x.x   # 로컬 PC의 이더넷 IP
 export ROS_HOSTNAME=$ROS_IP
 export ROS_ROS_MASTER_URI=http://$ROS_IP:11311   # eth IP of your local PC for ROS Master 
 ```
+```bash
+# 경지장에서 대회 참여자의 로컬 PC의 ~/.bashrc 예시 
+
+export ROS_IP=x.x.x.x   # 대회 참여자의 이더넷 IP 
+export ROS_HOSTNAME=$ROS_IP
+export ROS_ROS_MASTER_URI=http://<경기장 PC의 IP>:11311   # eth IP for ROS Master 
+```
+
+
 ***
 
 ### Webots World 설치하기 

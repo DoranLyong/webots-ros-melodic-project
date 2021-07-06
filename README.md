@@ -124,7 +124,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC
 
 [World center] 
 - Translation[x, y, z] : 0 , 0 , 0 
-- Rotation(quaternions)[w, x, y, z] : 1 , 0 , 0 , 0 ]
+- Rotation(quaternions)[w, x, y, z] : 1 , 0 , 0 , 0 
 
 ```
 

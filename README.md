@@ -9,8 +9,7 @@
 
 ### 로컬 PC에 Webots 설치하기 
 (1) 로컬 PC에 [ROS Melodic](http://wiki.ros.org/melodic)이 설치 된 것으로 간주한다 <br/>
-(2) [Installation Procedure](https://cyberbotics.com/doc/guide/installation-procedure#installation-procedure)을 참고해서 [webots을 설치](https://cyberbotics.com/)한다 <br/>
-(3) [universal_robots](http://wiki.ros.org/universal_robots) 패키지를 ROS 버전에 맞게 설치한다 <br/>
+(2) [universal_robots](http://wiki.ros.org/universal_robots) 패키지를 ROS 버전에 맞게 설치한다(i.e., ```melodic```) <br/>
 (6) 테스트: [UR 로봇 프로젝트 파일을 catkin_ws로 옮기고 rviz에 띄우기](https://cyberbotics.com/doc/guide/ure)
 
 ***

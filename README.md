@@ -50,9 +50,8 @@ export ROS_ROS_MASTER_URI=http://$ROS_IP:11311   # eth IP of your local PC for R
 
 * 위의 명령어가 실행되면 ```webots_melodic``` 이란 이름으로 도커 컨테이너가 생성된다 
 * 해당 컨테이너를 다시 실행하고 싶다면 로컬 PC의 터미널에서 ```~$ ./run_webots-ros_container.bash``` 명령을 다시 실행한다 
-* 도커 컨테이너에서 ```ROS_IP```, ```ROS_HOSTNAME```, ```ROS_MASTER_URI``` 환경 변수 값만 잘 설정하면 굳이 해당 옵션을 줄 필요가 없음 [(참고 링크)](https://www.ybliu.com/2020/05/ros-remote-debgging-and-communication.html)
+* 도커 컨테이너의 ```~/.bashrc```에서 ```ROS_IP```, ```ROS_HOSTNAME```, ```ROS_MASTER_URI``` 환경 변수 값을 아래와 같이 할당한다 [(참고 링크)](https://www.ybliu.com/2020/05/ros-remote-debgging-and-communication.html): 
 
-- 도커 환경에서 ROS network를 다음과 같이 설정한다: 
 ```bash 
 # 도커의 ~/.bashrc 에서 
 

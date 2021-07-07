@@ -126,10 +126,7 @@ __Method 02__. 위의 명령은 다음과 같이 간략하게 실행가능
 ### 로컬 PC에서 Webots World 제어하기 
 
 
-#### 1. 영상 데이터 topic name
-* 여기까지 수행했다면 webots world 에서 ROS Master로 RGB 카메라 및 Range Finder 데이터 토픽(topic)을 발행한다
-* 아래 토픽 버스 이름을 통해 영상 정보를 확인할 수 있다 
-* [Image topic subscribe](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/catkin_ws/src/ur_e_webots/scripts/webots_ros_tutorial.py) 예시 
+#### 1. 영상 데이터
 ```bash 
 # RGB image topic 
 /CAM/camera/image
@@ -137,6 +134,8 @@ __Method 02__. 위의 명령은 다음과 같이 간략하게 실행가능
 # Depth image topic 
 /CAM/range_finder/range_image
 ```
+* 영상 데이터의 메시지 타입은 ```sensor_msgs/Image```
+* [Image topic subscribe](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/catkin_ws/src/ur_e_webots/scripts/webots_ros_tutorial.py) 예시 
 
 ##### ※ Camera world → Robot world 변환 행렬을 구하기 위한 파라미터 
 ```bash 
@@ -164,10 +163,8 @@ __Method 02__. 위의 명령은 다음과 같이 간략하게 실행가능
 #### 2. UR10 로봇 제어
 
 ##### (1) MoveIt 활용 예시 
-* [User Guide](https://cyberbotics.com/doc/guide/ure?tab-language=python#ros) 참고 
-
   ```bash  
-  # 도커 컨테이너의 Webots World의 TimeStep이 동작하는지 확인한 후 실행 
+  # 도커 컨테이너의 Webots World에서 좌측 상단에 TimeStep이 동작하는지 확인한 후 실행
   
   # MoveIt 연동 패키지 예시 
   ~$ roslaunch ur10_e_moveit_config ur10_e_moveit_planning_execution.launch
@@ -175,13 +172,14 @@ __Method 02__. 위의 명령은 다음과 같이 간략하게 실행가능
   ~$ roslaunch ur10_e_moveit_config moveit_rviz.launch config:=true   
   ```
 * 여기까지 실행이 끝났다면 webots의 가상환경이 MoveIt과 연동되어 제어되는 것을 확인할 수 있다 
+* [User Guide](https://cyberbotics.com/doc/guide/ure?tab-language=python#ros) 참고 
  
 
 ##### (2) 커스텀 제어 예시 - Grippers & URe joints 제어 
  * 간단한 Gripper 조작을 위한 토픽 발행 형태는 ```~$ rostopic pub /grp_follow_joint_trajectory/goal control_msgs/FollowJointTrajectoryActionGoal``` 을 통해 제어할 수 있음 
      * [간단한_핸드조작_토픽_pub.txt](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/%EA%B0%84%EB%8B%A8%ED%95%9C_%ED%95%B8%EB%93%9C%EC%A1%B0%EC%9E%91_%ED%86%A0%ED%94%BD_pub.txt) 
      * [사용된 Gripper의 joints 정보](https://cyberbotics.com/doc/guide/gripper-actuators#robotiq-3f-gripper)
- * UR10e 로봇도 유사한 방식으로 ```~$ rostopic pub /follow_joint_trajectory/goal control_msgs/FollowJointTrajectoryActionGoal``` 을 통해 제어할 수 있음 
+ * UR10e 로봇도 유사한 방식으로 ```~$ rostopic pub /follow_joint_trajectory/goal control_msgs/FollowJointTrajectoryActionGoal``` 을 통해 제어 가능
 
     * 자세한 UR10 로봇 제어과 관련된 내용은 [메뉴얼](https://cyberbotics.com/doc/guide/ure)을 참고 
     * [ur_e_webots 코드](https://github.com/cyberbotics/webots/blob/released/projects/robots/universal_robots/resources/ros_package/ur_e_webots/scripts/universal_robots_ros.py)를 바탕으로 webots world가 설계됨 
@@ -189,8 +187,8 @@ __Method 02__. 위의 명령은 다음과 같이 간략하게 실행가능
     * [UR10e 로봇의 joints 정보](https://cyberbotics.com/doc/guide/ure?tab-language=python)  
 
 ##### (3) Gripper에 [distance sensor](https://cyberbotics.com/doc/reference/distancesensor?tab-language=ros#distancesensor-functions)추가 
-* 아래 토픽으로 Subscribe 할 수 있다. 
-* [std_msg/Range](http://docs.ros.org/en/melodic/api/sensor_msgs/html/msg/Range.html) 타입으로 ```range```, ```max_range```, ```min_range``` 값을 알 수 있다. 
+* 아래 토픽으로 Subscribe 가능
+* [std_msg/Range](http://docs.ros.org/en/melodic/api/sensor_msgs/html/msg/Range.html) 타입으로 ```range```, ```max_range```, ```min_range``` 값을 받을 수 있음
 ```bash 
 /gripper_distance_sensor     # rostopic name 
 ```

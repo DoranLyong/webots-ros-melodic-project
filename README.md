@@ -221,7 +221,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC
 ```
 MIT License
 
-Copyright (c) 2021 윤건우, 김기정, 이정호 
+Copyright (c) 2021 Guhnoo yun, Kijung Kim, Jeongho Lee 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -79,8 +79,7 @@
 ```
 <br/>
 
-* 위의 명령어가 실행되면 ```webots_melodic``` 이란 이름으로 도커 컨테이너가 생성된다 
-* 해당 컨테이너를 다시 실행하고 싶다면 로컬 PC의 터미널에서 ```~$ ./run_webots-ros_container.bash``` 명령을 다시 실행한다 
+* 해당 컨테이너를 다시 실행하고 싶다면 ```~$ ./run_webots-ros_container.bash```
 * 도커 컨테이너의 ```~/.bashrc```에서 ```ROS_IP```, ```ROS_HOSTNAME```, ```ROS_MASTER_URI``` 환경 변수 값을 아래와 같이 할당[(참고 링크)](https://www.ybliu.com/2020/05/ros-remote-debgging-and-communication.html): 
 
 ```bash 
@@ -95,7 +94,7 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC
 
   
 
-#### 3. Run the webots world and Connect with ROS (여기서 부터는 도커 환경에서...)
+#### 3. Run the webots world and Connect with ROS in the docker container (여기서 부터는 도커 환경에서...)
 * 로컬 PC 에서 ```roscore```를 실행한다 
 * 도커 환경에서 아래 명령어를 각각 실행한다 (각각 새로운 도커 터미널에서 실행할 것 )
 ```bash

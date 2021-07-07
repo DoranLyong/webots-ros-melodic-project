@@ -11,7 +11,7 @@ then
     else
         touch $XAUTH
     fi
-    chmod a+r $XAUTH
+    sudo chmod a+r $XAUTH
 fi
 
 

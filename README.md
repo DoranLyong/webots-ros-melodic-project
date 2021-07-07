@@ -8,11 +8,11 @@
 
 
 ### 로컬 PC에 __universal_robot__ ROS 패키지 설치하기 
-(1) [ROS Melodic](http://wiki.ros.org/melodic)설치; ubuntu 18.04 <br/> 
-(2) [universal_robots](http://wiki.ros.org/universal_robots) 패키지를 ROS 버전에 맞게 설치한다 (i.e., ```melodic```) <br/>
+#### 0. PC OS환경에 맞게 ROS 설치 (18.04 : melodic, 20.04 : noetic); [ros install](http://wiki.ros.org/ROS/Installation)<br/> 
+1. [universal_robots](http://wiki.ros.org/universal_robots) 패키지를 ROS 버전에 맞게 설치한다 (i.e., ```melodic```) <br/>
   * ```apt-get``` 이 아닌 ```git clone```으로 소스빌드 할 것을 권장한다 
 
-(3) ```ROS_NETWORK```는 다음과 같이 설정한다 
+2. ```ROS_NETWORK```는 다음과 같이 설정한다 
 
 ```bash
 # 로컬 PC의 ~/.bashrc 에서 

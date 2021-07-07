@@ -124,7 +124,7 @@ __Method 02__. 위의 명령은 다음과 같이 간략하게 실행가능
 ### 로컬 PC에서 Webots World 제어하기 
 
 
-#### 4. 영상 데이터 topic name
+#### 1. 영상 데이터 topic name
 * 여기까지 수행했다면 webots world 에서 ROS Master로 RGB 카메라 및 Range Finder 데이터 토픽(topic)을 발행한다
 * 아래 토픽 버스 이름을 통해 영상 정보를 확인할 수 있다 
 * [Image topic subscribe](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/catkin_ws/src/ur_e_webots/scripts/webots_ros_tutorial.py) 예시 
@@ -159,7 +159,7 @@ __Method 02__. 위의 명령은 다음과 같이 간략하게 실행가능
 
 
 
-#### 5. UR10 로봇 제어
+#### 2. UR10 로봇 제어
 
 ##### (1) MoveIt 활용 예시 
 * [User Guide](https://cyberbotics.com/doc/guide/ure?tab-language=python#ros) 참고 
@@ -194,12 +194,12 @@ __Method 02__. 위의 명령은 다음과 같이 간략하게 실행가능
 ```
 
 
-#### 6. 기타 
+#### 3. 기타 
 * 그 이외 webots과 관련된 내용은 [webots_ros github](https://github.com/cyberbotics/webots_ros) 및 [ros.org의 webots 위키](http://wiki.ros.org/webots) 참고
 
 ***
 
-#### 7. 대회 준비를 위한 Tip
+### 대회 준비를 위한 Tip
 [경기 내용]
 * 경기는 물리적으로 분리된 두 대의 컴퓨터로 진행된다. 
 * 한 대는 ```ROS_MASTER```와 ```webots world```가 실행될 경연 당일 준비될 경기장 컴퓨터(주최 측에서 준비), 다른 하나는 대회 참여자의 개인 컴퓨터이다. 

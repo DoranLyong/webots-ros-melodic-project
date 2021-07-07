@@ -34,21 +34,21 @@
 
 #### 2. ```ROS_NETWORK```는 다음과 같이 설정 
 
-   ```bash
-   # 로컬 PC의 ~/.bashrc 에서 
+    ```bash
+    # 로컬 PC의 ~/.bashrc 에서 
 
-   export ROS_IP=x.x.x.x   # 로컬 PC의 이더넷 IP 
-   export ROS_HOSTNAME=$ROS_IP
-   export ROS_ROS_MASTER_URI=http://$ROS_IP:11311   # eth IP of your local PC for ROS Master 
-   ```
-   ```bash
-   # 경기장에서 대회 참여자의 로컬 PC의 ~/.bashrc 예시 
+    export ROS_IP=x.x.x.x   # 로컬 PC의 이더넷 IP 
+    export ROS_HOSTNAME=$ROS_IP
+    export ROS_ROS_MASTER_URI=http://$ROS_IP:11311   # eth IP of your local PC for ROS Master 
+    ```
+    ```bash
+    # 경기장에서 대회 참여자의 로컬 PC의 ~/.bashrc 예시 
 
-   export ROS_IP=x.x.x.x   # 대회 참여자의 이더넷 IP 
-   export ROS_HOSTNAME=$ROS_IP
-   export ROS_ROS_MASTER_URI=http://<경기장 PC의 IP>:11311   # eth IP for ROS Master 
-   ```
-   * 끝난 뒤 반드시 ```~$ source ~/.bashrc```
+    export ROS_IP=x.x.x.x   # 대회 참여자의 이더넷 IP 
+    export ROS_HOSTNAME=$ROS_IP
+    export ROS_ROS_MASTER_URI=http://<경기장 PC의 IP>:11311   # eth IP for ROS Master 
+    ```
+    * 끝난 뒤 반드시 ```~$ source ~/.bashrc```
 
 
 ***
@@ -64,8 +64,12 @@
   ```
 
 #### 2. Pull and Install the docker image 
-* 현재 깃허브 레포지토리에 있는 파일을 가지고 아래 명령어를 순서대로 실행한다 
+* 현재 깃허브 레포지토리에 있는 파일을 가지고 아래 명령어를 순서대로 실행 
 ```bash
+~$ git clone https://github.com/DoranLyong/webots-ros-melodic-project.git
+
+~$ cd ./webots-ros-melodic-project
+
 ~$ sudo chmod a+x make_webots-ros_container.bash run_webots-ros_container.bash  # 실행 권한 부여 
 
 ~$ ./make_webots-ros_container.bash  # 도커 이미지 설치 및 컨테이너 생성 
@@ -77,7 +81,7 @@
 
 * 위의 명령어가 실행되면 ```webots_melodic``` 이란 이름으로 도커 컨테이너가 생성된다 
 * 해당 컨테이너를 다시 실행하고 싶다면 로컬 PC의 터미널에서 ```~$ ./run_webots-ros_container.bash``` 명령을 다시 실행한다 
-* 도커 컨테이너의 ```~/.bashrc```에서 ```ROS_IP```, ```ROS_HOSTNAME```, ```ROS_MASTER_URI``` 환경 변수 값을 아래와 같이 할당한다 [(참고 링크)](https://www.ybliu.com/2020/05/ros-remote-debgging-and-communication.html): 
+* 도커 컨테이너의 ```~/.bashrc```에서 ```ROS_IP```, ```ROS_HOSTNAME```, ```ROS_MASTER_URI``` 환경 변수 값을 아래와 같이 할당[(참고 링크)](https://www.ybliu.com/2020/05/ros-remote-debgging-and-communication.html): 
 
 ```bash 
 # 도커의 ~/.bashrc 에서 
@@ -87,7 +91,7 @@ export ROS_IP=172.17.0.x  # in the docker container for webots world
 export ROS_HOSTNAME=$ROS_IP
 export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC for ROS Master 
 ```
-
+* 끝난 뒤 반드시 ```~$ source ~/.bashrc```
 
   
 

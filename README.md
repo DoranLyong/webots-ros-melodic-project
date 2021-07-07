@@ -163,6 +163,14 @@ export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC
     * [webots_ros를 통한 컨트롤러 예시](https://github.com/cyberbotics/webots_ros/tree/master/scripts)
     * [UR10e 로봇의 joints 정보](https://cyberbotics.com/doc/guide/ure?tab-language=python)  
 
+##### (3) Gripper에 distance sensor추가 
+* 아래 토픽으로 Subscribe 할 수 있다. 
+* [std_msg/Range](http://docs.ros.org/en/melodic/api/sensor_msgs/html/msg/Range.html) 타입으로 ```range```, ```max_range```, ```min_range``` 값을 알 수 있다. 
+```bash 
+/gripper_distance_sensor     # rostopic name 
+```
+
+
 #### 6. 기타 
 * 그 이외 webots과 관련된 내용은 [webots_ros github](https://github.com/cyberbotics/webots_ros) 및 [ros.org의 webots 위키](http://wiki.ros.org/webots) 참고
 

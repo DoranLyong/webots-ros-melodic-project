@@ -12,25 +12,25 @@
  * (18.04 : melodic, 20.04 : noetic); [ros install](http://wiki.ros.org/ROS/Installation)<br/> 
 #### 1. [universal_robots](http://wiki.ros.org/universal_robots) 패키지 설치 <br/>
   * ```apt-get``` 이 아닌 ```git clone```으로 소스 빌드할 것을 권장 
-  ```bash 
-   cd $HOME/catkin_ws/src
+   ```bash 
+    cd $HOME/catkin_ws/src
    
-   # retrieve the sources (replace '$DISTRO' with the ROS version you are using)
-   # 아직 noetic버전이 없기 때문에 melodic-devel 버전으로 깃클론 
-   git clone -b melodic-devel https://github.com/ros-industrial/universal_robot.git  
+    # retrieve the sources (replace '$DISTRO' with the ROS version you are using)
+    # 아직 noetic버전이 없기 때문에 melodic-devel 버전으로 깃클론 
+    git clone -b melodic-devel https://github.com/ros-industrial/universal_robot.git  
     
-   cd $HOME/catkin_ws
+    cd $HOME/catkin_ws
     
-   # checking dependencies (replace '$DISTRO' with the ROS version you are using)
-   rosdep update
-   rosdep install --from-paths src --ignore-src --rosdistro $ROS_DISTRO
+    # checking dependencies (replace '$DISTRO' with the ROS version you are using)
+    rosdep update
+    rosdep install --from-paths src --ignore-src --rosdistro $ROS_DISTRO
    
-   # building
-   catkin_make
+    # building
+    catkin_make
    
-   # source this workspace (careful when also sourcing others)
-   source $HOME/catkin_ws/devel/setup.bash
-  ```
+    # source this workspace (careful when also sourcing others)
+    source $HOME/catkin_ws/devel/setup.bash
+   ```
 
 2. ```ROS_NETWORK```는 다음과 같이 설정한다 
 
@@ -48,6 +48,7 @@ export ROS_IP=x.x.x.x   # 대회 참여자의 이더넷 IP
 export ROS_HOSTNAME=$ROS_IP
 export ROS_ROS_MASTER_URI=http://<경기장 PC의 IP>:11311   # eth IP for ROS Master 
 ```
+끝난 뒤 반드시 ```~$ source ~/.bashrc```
 
 
 ***

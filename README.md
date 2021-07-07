@@ -3,7 +3,7 @@
 [실행환경]
 * Ubuntu 18.04 
 * ROS Melodic  
-* Nvidia GPU driver (CUDA 11.2가 가능한 GPU 디바이스. e.g., GTX 1080Ti)
+* Nvidia GPU driver (CUDA 11.2 지원이 가능한 GPU 디바이스. e.g., GTX 1080Ti)
 
 
 

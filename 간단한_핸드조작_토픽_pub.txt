@@ -68,7 +68,7 @@ goal:
     - "finger_middle_joint_1"
     points:
       - 
-        positions: [0, 0, 0]
+        positions: [0.0495,  0.0495,  0.0495]
         velocities: [1, 1, 1]
         accelerations: [1, 1, 1]
         effort: [0, 0, 0]

@@ -6,6 +6,7 @@
 * Nvidia GPU driver (CUDA 11.2 지원이 가능한 GPU 디바이스. e.g., GTX 1080Ti)
 
 
+## Installation 
 
 ### 로컬 PC에 __universal_robot__ ROS 패키지 설치하기 
 #### 0. PC OS환경에 맞게 ROS 설치 
@@ -51,7 +52,6 @@
     * 끝난 뒤 반드시 ```~$ source ~/.bashrc```
 
 
-***
 
 ### Webots World 설치하기 
 #### 1. Install Docker and Nvidia-docker 
@@ -121,6 +121,8 @@ __Method 02__. 위의 명령은 다음과 같이 간략하게 실행가능
 
 
 ***
+## Robot Control 
+
 ### 로컬 PC에서 Webots World 제어하기 
 
 

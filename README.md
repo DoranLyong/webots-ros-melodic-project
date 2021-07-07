@@ -13,13 +13,13 @@
 #### 1. [universal_robots](http://wiki.ros.org/universal_robots) 패키지 설치 <br/>
   * ```apt-get``` 이 아닌 ```git clone```으로 소스 빌드할 것을 권장 
   ```bash 
-   cd /path/to/catkin_ws/src
+   cd $HOME/catkin_ws/src
    
    # retrieve the sources (replace '$DISTRO' with the ROS version you are using)
    # 아직 noetic버전이 없기 때문에 melodic-devel 버전으로 깃클론 
    git clone -b melodic-devel https://github.com/ros-industrial/universal_robot.git  
     
-   cd /path/to/catkin_ws
+   cd $HOME/catkin_ws
     
    # checking dependencies (replace '$DISTRO' with the ROS version you are using)
    rosdep update
@@ -29,7 +29,7 @@
    catkin_make
    
    # source this workspace (careful when also sourcing others)
-   source /path/to/catkin_ws/devel/setup.bash
+   source $HOME/catkin_ws/devel/setup.bash
   ```
 
 2. ```ROS_NETWORK```는 다음과 같이 설정한다 

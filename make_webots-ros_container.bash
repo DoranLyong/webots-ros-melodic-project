@@ -1,4 +1,7 @@
 XAUTH=/tmp/.docker.xauth
+
+mkdir $XAUTH
+
 if [ ! -f $XAUTH ]
 then
     xauth_list=$(xauth nlist :0 | sed -e 's/^..../ffff/')

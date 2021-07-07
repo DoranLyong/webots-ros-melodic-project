@@ -62,6 +62,7 @@ __[Content]__
     export ROS_HOSTNAME=$ROS_IP
     export ROS_ROS_MASTER_URI=http://$ROS_IP:11311   # eth IP of your local PC for ROS Master 
     ```
+    
     ```bash
     # 경기장에서 대회 참여자의 로컬 PC의 ~/.bashrc 예시 
 
@@ -69,6 +70,7 @@ __[Content]__
     export ROS_HOSTNAME=$ROS_IP
     export ROS_ROS_MASTER_URI=http://<경기장 PC의 IP>:11311   # eth IP for ROS Master 
     ```
+    
     * 끝난 뒤 반드시 ```~$ source ~/.bashrc```
 
 

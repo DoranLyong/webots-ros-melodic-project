@@ -1,4 +1,4 @@
-# Webots World (Ver 1.0.0)
+# Webots World (Ver 1.0.2)
 
 [실행환경]
 * Ubuntu 18.04 

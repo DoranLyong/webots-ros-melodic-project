@@ -32,7 +32,7 @@
     source $HOME/catkin_ws/devel/setup.bash
     ```
 
-2. ```ROS_NETWORK```는 다음과 같이 설정한다 
+#### 2. ```ROS_NETWORK```는 다음과 같이 설정 
 
    ```bash
    # 로컬 PC의 ~/.bashrc 에서 
@@ -48,23 +48,20 @@
    export ROS_HOSTNAME=$ROS_IP
    export ROS_ROS_MASTER_URI=http://<경기장 PC의 IP>:11311   # eth IP for ROS Master 
    ```
- * 끝난 뒤 반드시 ```~$ source ~/.bashrc```
+   * 끝난 뒤 반드시 ```~$ source ~/.bashrc```
 
 
 ***
 
 ### Webots World 설치하기 
 #### 1. Install Docker and Nvidia-docker 
-* [docker.com](https://docs.docker.com/engine/install/ubuntu/)으로 가서 자신의 컴퓨터 환경에 맞는 Docker Engine을 설치한다 
+* Docker Engine을 [설치](https://docs.docker.com/engine/install/ubuntu/)
+* Docker Compose를 [설치](https://docs.docker.com/compose/install/)
+* Nvidia-docker를 [설치](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker)
 * 루트(root) 권한 설정; ```sudo``` 없이 도커 사용하기 
   ``` bash
   ~$ sudo usermod -aG docker $USER #현재 접속중인 사용자에게 권한주기 
   ```
-* [docker.com/compose](https://docs.docker.com/compose/install/)에서 Docker Compose를 설치한다 
-* [nvidia.com](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker)를 참고해서 Nvidia-docker를 설치한다 
-  * 단, 사전에 로컬 PC에서 ```~$ watch nvidia-smi``` 명령어가 가능해야한다. 
-  * 위의 명령어가 안 된다면 본인의 환경에 맞게 GPU 드라이버를 설치해야 한다 
-
 
 #### 2. Pull and Install the docker image 
 * 현재 깃허브 레포지토리에 있는 파일을 가지고 아래 명령어를 순서대로 실행한다 

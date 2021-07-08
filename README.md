@@ -112,7 +112,7 @@ export ROS_IP=172.17.0.x  # in the docker container for webots world
 export ROS_HOSTNAME=$ROS_IP
 export ROS_ROS_MASTER_URI=http://172.17.0.1:11311   # docker IP of your local PC for ROS Master 
 ```
-* 끝난 뒤 반드시 ```~$ source ~/.bashrc```
+* 끝난 뒤 반드시 ```~# source ~/.bashrc```
 
   
 

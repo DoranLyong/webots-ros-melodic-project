@@ -262,7 +262,7 @@ __Method 02__. 위의 명령은 다음과 같이 간략하게 실행가능
     * webots 도커에서 ```~# python ~/objects_random_place.py```을 활용해 매번 랜덤으로 배치되는 장면을 바탕으로 각 팀별로 레이블링 하시기 바랍니다. 
 * webots world에 활용된 물체의 ```.wrl``` 파일과 ```Texture``` 이미지는 [objects_wrl](https://github.com/DoranLyong/webots-ros-melodic-project/tree/main/objects_wrl) 폴더에 업로드 되었습니다.
     * [MeshLab](https://www.meshlab.net/) 프로그램을 사용하면 간단하게 확인 가능 
-    <img src="./objects_wrl/example/Example.png" width=480>
+      <img src="./objects_wrl/example/Example.png" width=480>
 
 ***
 

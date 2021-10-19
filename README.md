@@ -264,6 +264,12 @@ __Method 02__. 위의 명령은 다음과 같이 간략하게 실행가능
     * [MeshLab](https://www.meshlab.net/) 프로그램을 사용하면 간단하게 확인 가능 
     
       <img src="./objects_wrl/example/Example.png" width=480>
+* (2021/10/19 업데이트) rviz-moveit-v1.0.4 로 업데이트 ([참고](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/make_webots-ros_container.bash)]
+ - [x] 물리엔지 충돌문제 (휴지 오브젝트 제거); 물리 엔진이 복잡해서 제거함 
+ - [x] 문제 랜덤 위치 실행 코드에 Seed 추가 
+    ``` bash
+    ~# python ~/objects_random_place.py --seed=42  # 물체 랜덤 위치에 시드 부여
+    ```
 
 ***
 

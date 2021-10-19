@@ -1,4 +1,4 @@
-# Webots World (Ver 1.0.2) 
+# Webots World (Ver 1.0.5) 
 
 __[실행환경]__
 * Ubuntu 18.04 
@@ -267,7 +267,7 @@ __Method 02__. 위의 명령은 다음과 같이 간략하게 실행가능
 
 
 #### (2021/10/19 업데이트) rviz-moveit-v1.0.5 로 업데이트 ([참고](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/make_webots-ros_container.bash))
- - [x] timestep := 16 으로 수정; 물리엔진의 부하를 줄이기 위해
+ - [x] timestep := 64 으로 수정; 물리엔진의 부하를 줄이기 위해
  - [x] tissue(휴지) 오브젝트 제거; 물리엔진이 복잡해서 제거됨 
  - [x] plastic_bag(과자봉지)의 물리엔진 수정됨 (물리영역 폭 증가)
  - [x] 문제 랜덤 위치 실행 코드에 seed 추가 

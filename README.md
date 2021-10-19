@@ -131,7 +131,7 @@ __Method 01__. 도커 환경에서 아래 명령어를 각각 실행 (각각 새
 
 ~# ~/sensor_enable.bash  # webots world의 센서 장비가 토픽을 ROS_MASTER터로 발행하도록 서비스 요청(call)
 
-~# python ~/objects_random_place.py   # 물체 위치 랜덤 
+~# python ~/objects_random_place.py --seed=42   # 물체 위치 랜덤 
 ```
 <br/>
 
@@ -139,7 +139,7 @@ __Method 02__. 위의 명령은 다음과 같이 간략하게 실행가능
 ```bash
 ~# ~/run_WebotsWorld_all.bash  # webots -> ur_e_webots.bash -> sensor_enable.bash 순으로 실행됨 
 
-~# python ~/objects_random_place.py   # 새로운 도커 터미널에서 실행할 것 
+~# python ~/objects_random_place.py --seed=42   # 새로운 도커 터미널에서 실행할 것 
 ```
 <br/>
 

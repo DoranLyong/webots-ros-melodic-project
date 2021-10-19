@@ -215,6 +215,7 @@ __Method 02__. 위의 명령은 다음과 같이 간략하게 실행가능
 ##### (3) Gripper에 [distance sensor](https://cyberbotics.com/doc/reference/distancesensor?tab-language=ros#distancesensor-functions)추가 
 * 아래 토픽으로 Subscribe 가능
 * [std_msg/Range](http://docs.ros.org/en/melodic/api/sensor_msgs/html/msg/Range.html) 타입으로 ```range```, ```max_range```, ```min_range``` 값을 받을 수 있음
+* ※ 대회에서는 distance sensor 를 사용하지 않음 
 ```bash 
 /gripper_distance_sensor     # rostopic name 
 ```

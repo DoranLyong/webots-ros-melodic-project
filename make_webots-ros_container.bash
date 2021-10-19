@@ -24,5 +24,5 @@ sudo docker run -t -d \
     --volume="$XAUTH:$XAUTH" \
     --runtime=nvidia \
     -v $HOME:/workspace \
-    doranlyong/webots-ros-melodic:rviz-moveit-v1.0.2 \
+    doranlyong/webots-ros-melodic:rviz-moveit-v1.0.4 \
     bash

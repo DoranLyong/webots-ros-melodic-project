@@ -267,8 +267,8 @@ __Method 02__. 위의 명령은 다음과 같이 간략하게 실행가능
 
 
 #### (2021/10/19 업데이트) rviz-moveit-v1.0.4 로 업데이트 ([참고](https://github.com/DoranLyong/webots-ros-melodic-project/blob/main/make_webots-ros_container.bash))
- - [x] 물리엔지 충돌문제 (휴지 오브젝트 제거); 물리 엔진이 복잡해서 제거함 
- - [x] plastic_bag(과자봉지)의 물리엔진 수정 됨 (물리영역 폭 증가)
+ - [x] tissue(휴지) 오브젝트 제거; 물리 엔진이 복잡해서 제거됨 
+ - [x] plastic_bag(과자봉지)의 물리엔진 수정됨 (물리영역 폭 증가)
  - [x] 문제 랜덤 위치 실행 코드에 seed 추가 
     ``` bash
     ~# python ~/objects_random_place.py --seed=42  # 물체 랜덤 위치에 시드 부여
